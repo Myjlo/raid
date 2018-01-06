@@ -1,0 +1,27 @@
+/*
+ * Body
+ */
+
+body {
+  padding-top: 3.5rem;
+}
+
+caption {
+  caption-side: top !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.heading_image {
+	margin-bottom: 5px;
+	width: 48px;
+	height: 48px;
+}
+
+.buff {
+	margin-bottom: 5px;
+	width: 20px;
+	height: 20px;
+}
