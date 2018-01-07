@@ -5048,11 +5048,12 @@ tbody.collapse.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10px;
+  height: 20px;
   overflow: hidden;
   font-size: 10px;
   background-color: #444;
   border-radius: 0.25rem;
+  color: #000;
 }
 
 .progress-bar {
