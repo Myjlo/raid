@@ -12,6 +12,7 @@
 <!--CSS/Scripts-->
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/open-iconic-bootstrap.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
@@ -55,18 +56,17 @@
         </ul>
       </div>
     </nav>
-<!--Content-->
+
     <main role="main" class="container">
-  <!--Vale Guardian-->
+<!--Vale Guardian-->
       <div class="row">
-      <!--Boss Info-->
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Vale Guardian</b></div>
             <div class="card-body">
               <div class="element-background">
                 <img src="../assets/Bosses/Vale_Guardian.jpg" class="boss-image img-fluid" alt="Vale Guardian">
-              </div> 
+              </div>
               <dl class="row">
                 <dt class="col-sm-4">Difficulty</dt>
                 <dd class="col-sm-8">Medium</dd>
@@ -82,14 +82,15 @@
             </div>
           </div>
         </div>
-        <!--Group Composition-->
         <div class="col-lg-8">
           <div class="card bg-light">
-            <div class="card-header"><img src="../assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b></div>
-            <div class="card-body">
+            <div class="card-header">
+              <img src="../assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b>
+            </div>
+            <div class="card-body"> 
               <div class="element-background">
                 <div class="element-inner">
-                  <table class="table table-hover table-sm">
+                  <table class="table table-sm">
                     <tbody>
                       <tr>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Tank.png">  Chronomancer (Tank)'><img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Tank.png"></td>
@@ -111,19 +112,19 @@
               </div>
               <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                  <a class="nav-item nav-link active" id="nav-roles-tab" data-toggle="tab" href="#nav-roles" role="tab" aria-controls="nav-roles" aria-selected="true">Roles</a>
-                  <a class="nav-item nav-link" id="nav-dps-tab" data-toggle="tab" href="#nav-dps" role="tab" aria-controls="nav-dps" aria-selected="false">Classes</a>
+                  <a class="nav-item nav-link active" id="nav-vg-roles-tab" data-toggle="tab" href="#nav-vg-roles" role="tab" aria-controls="nav-vg-roles" aria-selected="true">Roles</a>
+                  <a class="nav-item nav-link" id="nav-vg-dps-tab" data-toggle="tab" href="#nav-vg-dps" role="tab" aria-controls="nav-vg-dps" aria-selected="false">Classes</a>
                 </div>
               </nav>
               <div class="tab-content element-background" id="nav-tabContent">
-                <div class="tab-pane fade element-inner active show" id="nav-roles" role="tabpanel" aria-labelledby="nav-roles-tab">
+                <div class="tab-pane fade element-inner active show" id="nav-vg-roles" role="tabpanel" aria-labelledby="nav-vg-roles-tab">
                   <div class="element-inner">
                     <dl class="row ">
                       <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Chronomancer.png"><span class="mesmer">Chronomancer</span></dt>
                       <dd class="col-sm-9 text-muted">
                         <span>
                           Designated Utilitybot.<br>
-                          Shares Boons to increase Boon uptime.<br>Pull
+                          Shares Boons to increase Boon uptime.<br>
                           Seeker Management with pulls.
                           Provides: 
                           <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Quickness.png"> Quickness' class="icon" src="../assets/Effects/Quickness.png">
@@ -166,7 +167,7 @@
                     </dl>
                   </div>
                 </div>
-                <div class="tab-pane fade element-inner" id="nav-dps" role="tabpanel" aria-labelledby="nav-dps-tab">
+                <div class="tab-pane fade element-inner" id="nav-vg-dps" role="tabpanel" aria-labelledby="nav-vg-dps-tab">
                   <div class="element-inner">
                     <p class="text-muted">
                       For <b>Vale Guardian</b> you need at least 2 Condi DPS classes to kill the <b>Red Guardian</b> during the split fase at <b>66%</b> and <b>33%</b>.
@@ -175,21 +176,24 @@
                     <p class="text-muted">Classes below are ordered by Effectiveness/Buffs and Difficulty (for example <img class="icon" src="../assets/Icons/Engineer.png"><span class="engineer">Engineer</span> brings <b>Pinpoint Distribution</b> but has an incredibly long and complicated rotation).
                     </p>
                   </div>
-                  <table class="table table-hover table-sm">
+                  <table class="table table-sm">
                     <tbody>
                       <tr>
+                        <th class="colored">Optimal</th>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Holosmith.png"><img class="icon" src="../assets/Icons/Power.png"> Holosmith (Power)'><img class="icon" src="../assets/Icons/Holosmith.png"><img class="icon" src="../assets/Icons/Power.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Dragonhunter.png"><img class="icon" src="../assets/Icons/Power.png"> Dragonhunter (Power)'><img class="icon" src="../assets/Icons/Dragonhunter.png"><img class="icon" src="../assets/Icons/Power.png"></td>
-                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"> Daredevil (Power)'><img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"></td>
-                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"> Weaver (Power)'><img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"></td>
-                        <td></td>
-                      </tr>
-                      <tr>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Renegade.png"><img class="icon" src="../assets/Icons/Condi.png"> Renegade (Condi)'><img class="icon" src="../assets/Icons/Renegade.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Soulbeast.png"><img class="icon" src="../assets/Icons/Condi.png"> Soulbeast (Condi)'><img class="icon" src="../assets/Icons/Soulbeast.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                      </tr>
+                      <tr>
+                        <th class="colored">Viable</th>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Engineer.png"><img class="icon" src="../assets/Icons/Condi.png"> Engineer (Condi)'><img class="icon" src="../assets/Icons/Engineer.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Firebrand.png"><img class="icon" src="../assets/Icons/Condi.png"> Firebrand (Condi)'><img class="icon" src="../assets/Icons/Firebrand.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Condi.png"> Daredevil (Condi)'><img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"> Daredevil (Power)'><img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"> Weaver (Power)'><img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Mirage.png"><img class="icon" src="../assets/Icons/Condi.png"> Mirage (Condi)'><img class="icon" src="../assets/Icons/Mirage.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Scourge.png"><img class="icon" src="../assets/Icons/Condi.png"> Scourge (Condi)'><img class="icon" src="../assets/Icons/Scourge.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
                       </tr>
                     </tbody>
                   </table>
@@ -198,14 +202,11 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg">
           <div class="card bg-light">
-            <div class="card-header"><img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b></div>
-            <div class="card-body">
+            <a class="card-header" data-toggle="collapse" data-target="#valeguardianmechanics" role="button" aria-expanded="false" aria-controls="valeguardianmechanics">
+              <img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
+            </a>
+            <div class="card-body collapse" id="valeguardianmechanics">
               <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-mechanics-tab" data-toggle="tab" href="#nav-mechanics" role="tab" aria-controls="nav-mechanics" aria-selected="true">Mechanics</a>
@@ -226,7 +227,7 @@
                       <dt class="col-sm-3">Vale Division</dt>
                       <dd class="col-sm-9 text-muted">
                       Vale Guardian will become invulnerable and split up into the 3 Mini-Bosses you've fought before.<br>
-                      You only have a few seconds to get into the right colored section to get the attunement. Once you get this attunement buff, you will receive heavy damage if you are inside the red circle of a different colored guardian unless your guardian has being killed.<br>
+                      You only have a few seconds to get into the right colored section to get the attunement. Once you get this attunement buff, you will receive heavy damage if you are inside the red circle of a different colored guardian unless your guardian has been killed.<br>
                       <br>
                       You should have decided pre-fight which members of your raid team are going to each guardian. 
                       For the Red Guardian you will need at least 2 Condi DPS. The Chronotank should aggro the Green Guardian and move him towards the Blue Guardian, which should meanwhile be getting killed by the rest of the squad. Break the breakbars to kill the guardians.</dd>
@@ -246,65 +247,370 @@
                 </div>
                 <div class="tab-pane element-inner fade" id="nav-walkthrough" role="tabpanel" aria-labelledby="nav-walkthrough-tab">
                   <div class="element-inner">
-                    <div class="row">
-                      <div class="col-6"
-                        <b>Preparation</b>
-                        <p class="text-muted">Assign people to Green Circle Duty and decide who goes where during Phase 2 and Phase 4.<br>
-                        Check your traits/skills/gear, eat your food/utility.</p>
+                    <b>Preparation</b>
+                    <p class="text-muted">Assign people to Green Circle Duty and decide who goes where during Phase 2 and Phase 4.<br>
+                    Check your traits/skills/gear, eat your food/utility.</p>
 
-                        <b>Phase 1</b>
-                        <div class="progress">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
-                        </div>
-                        <p class="text-muted"><b>Active Mechanics</b>: Distributed Magic, Unstable Magic Spike, Seekers. 
+                    <b>Phase 1</b>
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+<!--Gorseval-->
+      <div class="row">
+      <!--Boss Info-->
+        <div class="col-lg-4">
+          <div class="card bg-light">
+            <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Gorseval the Multifarious</b></div>
+            <div class="card-body">
+              <div class="element-background">
+                <img src="../assets/Bosses/Gorseval.jpg" class="boss-image img-fluid" alt="Gorseval">
+              </div> 
+              <dl class="row">
+                <dt class="col-sm-4">Difficulty</dt>
+                <dd class="col-sm-8">Medium</dd>
+                <dt class="col-sm-4">Hitbox</dt>
+                <dd class="col-sm-8">250 (Large)</dd>
+                <dt class="col-sm-4">Armor</dt>
+                <dd class="col-sm-8">2597</dd>
+                <dt class="col-sm-4">Enrage</dt>
+                <dd class="col-sm-8">7:00</dd>
+                <dt class="col-sm-4">Health</dt>
+                <dd class="col-sm-8">21.6 Million</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <!--Group Composition-->
+        <div class="col-lg-8">
+          <div class="card bg-light">
+            <div class="card-header"><img src="../assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b></div>
+            <div class="card-body">
+              <div class="element-background">
+                <div class="element-inner">
+                  <table class="table table-sm">
+                    <tbody>
+                      <tr>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Tank.png"> Chronomancer (Tank)'><img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Tank.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png"> Druid (Healer)'><img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Berserker.png"><img class="icon" src="../assets/Icons/Condi.png"> Berserker (Bannerslave)'><img class="icon" src="../assets/Icons/Berserker.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                      </tr>
+                      <tr>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Power.png">  Chronomancer'><img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png">  Druid (Healer)'><img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-gorse-roles-tab" data-toggle="tab" href="#nav-gorse-roles" role="tab" aria-controls="nav-gorse-roles" aria-selected="true">Roles</a>
+                  <a class="nav-item nav-link" id="nav-gorse-dps-tab" data-toggle="tab" href="#nav-gorse-dps" role="tab" aria-controls="nav-gorse-dps" aria-selected="false">Classes</a>
+                </div>
+              </nav>
+              <div class="tab-content element-background" id="nav-tabContent">
+                <div class="tab-pane fade element-inner active show" id="nav-gorse-roles" role="tabpanel" aria-labelledby="nav-gorse-roles-tab">
+                  <div class="element-inner">
+                    <dl class="row ">
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Chronomancer.png"><span class="mesmer">Chronomancer</span></dt>
+                      <dd class="col-sm-9 text-muted">
+                        <span>
+                          Designated Utilitybot.<br>
+                          Shares Boons to increase Boon uptime.<br>
+                          Pulls in adds.
+                          Provides: 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Quickness.png"> Quickness' class="icon" src="../assets/Effects/Quickness.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Aegis.png"> Aegis' class="icon" src="../assets/Effects/Aegis.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Regeneration.png"> Regeneration' class="icon" src="../assets/Effects/Regeneration.png">
+                        </span>
+                      </dd>
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
+                      <dd class="col-sm-9 text-muted">
+                       <span>
+                          Designated Support<br>
+                          Immobilize Charged Souls<br>
+                          Provides: 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Might.png"> Might' class="icon" src="../assets/Effects/Might.png"> 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Fury.png"> Fury' class="icon" src="../assets/Effects/Fury.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Vigor.png"> Vigor' class="icon" src="../assets/Effects/Vigor.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Swiftness.png"> Swiftness' class="icon" src="../assets/Effects/Swiftness.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Swiftness.png"> Regeneration' class="icon" src="../assets/Effects/Regeneration.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Spotter.png"> Spotter' class="icon" src="../assets/Effects/Spotter.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Sun_Spirit.png"> Sun Spirit' class="icon" src="../assets/Effects/Sun_Spirit.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Frost_Spirit.png"> Frost Spirit' class="icon" src="../assets/Effects/Frost_Spirit.png">
+                        </span>
+                      </dd>
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
+                      <dd class="col-sm-9 text-muted">
+                        <span>
+                          Designated Bannerslave.<br>
+                          Provides:
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Empower_Allies.png"> Empower Allies' class="icon" src="../assets/Effects/Empower_Allies.png"> 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Banner_of_Discipline.png"> Banner of Discipline' class="icon" src="../assets/Effects/Banner_of_Discipline.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Banner_of_Strength.png"> Banner_of_Strength' class="icon" src="../assets/Effects/Banner_of_Strength.png">
+                        </span>
+                      </dd>
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Any.png">Everyone</dt>
+                      <dd class="col-sm-9 text-muted">
+                        <span>
+                          DPS, Clear Orbs of Darkness, Communicate and use Crowd Control skills when needed.
+                        </span>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="tab-pane fade element-inner" id="nav-gorse-dps" role="tabpanel" aria-labelledby="nav-gorse-dps-tab">
+                  <div class="element-inner">
+                    <p class="text-muted">
+                      
+                    </p>
+                  </div>
+                  <table class="table table-sm">
+                    <tbody>
+                      <tr>
+                        <th class="colored">Optimal</th>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"> Weaver (Power)'><img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Holosmith.png"><img class="icon" src="../assets/Icons/Power.png"> Holosmith (Power)'><img class="icon" src="../assets/Icons/Holosmith.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Dragonhunter.png"><img class="icon" src="../assets/Icons/Power.png"> Dragonhunter (Power)'><img class="icon" src="../assets/Icons/Dragonhunter.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Renegade.png"><img class="icon" src="../assets/Icons/Condi.png"> Renegade (Condi)'><img class="icon" src="../assets/Icons/Renegade.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                      </tr>
+                      <tr>
+                        <th class="colored">Viable</th>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Soulbeast.png"><img class="icon" src="../assets/Icons/Condi.png"> Soulbeast (Condi)'><img class="icon" src="../assets/Icons/Soulbeast.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Engineer.png"><img class="icon" src="../assets/Icons/Condi.png"> Engineer (Condi)'><img class="icon" src="../assets/Icons/Engineer.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Firebrand.png"><img class="icon" src="../assets/Icons/Condi.png"> Firebrand (Condi)'><img class="icon" src="../assets/Icons/Firebrand.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Condi.png"> Daredevil (Condi)'><img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"> Daredevil (Power)'><img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Mirage.png"><img class="icon" src="../assets/Icons/Condi.png"> Mirage (Condi)'><img class="icon" src="../assets/Icons/Mirage.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Scourge.png"><img class="icon" src="../assets/Icons/Condi.png"> Scourge (Condi)'><img class="icon" src="../assets/Icons/Scourge.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light">
+            <a class="card-header" data-toggle="collapse" data-target="#gorsevalmechanics" role="button" aria-expanded="false" aria-controls="gorsevalmechanics">
+              <img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
+            </a>
+            <div class="card-body collapse" id="gorsevalmechanics">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-mechanics-tab" data-toggle="tab" href="#nav-mechanics" role="tab" aria-controls="nav-mechanics" aria-selected="true">Mechanics</a>
+                  <a class="nav-item nav-link" id="nav-walkthrough-tab" data-toggle="tab" href="#nav-walkthrough" role="tab" aria-controls="nav-walkthrough" aria-selected="false">Walkthrough</a>
+                </div>
+              </nav>
+              <div class="tab-content element-background" id="nav-tabContent">
+                <div class="tab-pane element-inner fade show active" id="nav-mechanics" role="tabpanel" aria-labelledby="nav-mechanics-tab">
+                  <div class="element-inner">
+                    <dl class="row ">
+                      <dt class="col-sm-3">Mechanic</dt>
+                      <dd class="col-sm-9 text-muted">Explanation</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="tab-pane element-inner fade" id="nav-walkthrough" role="tabpanel" aria-labelledby="nav-walkthrough-tab">
+                  <div class="element-inner">
+                    <b>Preparation</b>
+                    <p class="text-muted"><br>
+                    Check your traits/skills/gear, eat your food/utility.</p>
 
+                    <b>Phase 1</b>
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+<!--Sabetha-->
+      <div class="row">
+      <!--Boss Info-->
+        <div class="col-lg-4">
+          <div class="card bg-light">
+            <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Sabetha the Saboteur</b></div>
+            <div class="card-body">
+              <div class="element-background">
+                <img src="../assets/Bosses/Sabetha.jpg" class="boss-image img-fluid" alt="Sabetha">
+              </div> 
+              <dl class="row">
+                <dt class="col-sm-4">Difficulty</dt>
+                <dd class="col-sm-8">Medium</dd>
+                <dt class="col-sm-4">Hitbox</dt>
+                <dd class="col-sm-8">48 (Small)</dd>
+                <dt class="col-sm-4">Armor</dt>
+                <dd class="col-sm-8">2597</dd>
+                <dt class="col-sm-4">Enrage</dt>
+                <dd class="col-sm-8">9:00</dd>
+                <dt class="col-sm-4">Health</dt>
+                <dd class="col-sm-8">34 Million</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <!--Group Composition-->
+        <div class="col-lg-8">
+          <div class="card bg-light">
+            <div class="card-header"><img src="../assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b></div>
+            <div class="card-body">
+              <div class="element-background">
+                <div class="element-inner">
+                  <table class="table table-sm">
+                    <tbody>
+                      <tr>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Power.png"> Chronomancer'><img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png"> Druid (Healer)'><img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Berserker.png"><img class="icon" src="../assets/Icons/Condi.png"> Berserker (Bannerslave)'><img class="icon" src="../assets/Icons/Berserker.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                      </tr>
+                      <tr>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Power.png">  Chronomancer'><img class="icon" src="../assets/Icons/Chronomancer.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png">  Druid (Healer)'><img class="icon" src="../assets/Icons/Druid.png"><img class="icon" src="../assets/Icons/Healer.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"> DPS'><img class="icon" src="../assets/Icons/Any.png"><img class="icon" src="../assets/Icons/Condi.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-sabetha-roles-tab" data-toggle="tab" href="#nav-sabetha-roles" role="tab" aria-controls="nav-sabetha-roles" aria-selected="true">Roles</a>
+                  <a class="nav-item nav-link" id="nav-sabetha-dps-tab" data-toggle="tab" href="#nav-sabetha-dps" role="tab" aria-controls="nav-sabetha-dps" aria-selected="false">Classes</a>
+                </div>
+              </nav>
+              <div class="tab-content element-background" id="nav-tabContent">
+                <div class="tab-pane fade element-inner active show" id="nav-sabetha-roles" role="tabpanel" aria-labelledby="nav-sabetha-roles-tab">
+                  <div class="element-inner">
+                    <dl class="row ">
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Chronomancer.png"><span class="mesmer">Chronomancer</span></dt>
+                      <dd class="col-sm-9 text-muted">
+                        <span>
+                          Designated Utilitybot.<br>
+                          Shares Boons to increase Boon uptime.<br>
+                          Pulls in adds.
+                          Provides: 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Quickness.png"> Quickness' class="icon" src="../assets/Effects/Quickness.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Aegis.png"> Aegis' class="icon" src="../assets/Effects/Aegis.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Regeneration.png"> Regeneration' class="icon" src="../assets/Effects/Regeneration.png">
+                        </span>
+                      </dd>
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
+                      <dd class="col-sm-9 text-muted">
+                       <span>
+                          Designated Support<br>
+                          Flak Kiter/Sapper Bomb Baiter (Soulbeast or Scourge can take this role as well).<br>
+                          Provides: 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Might.png"> Might' class="icon" src="../assets/Effects/Might.png"> 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Fury.png"> Fury' class="icon" src="../assets/Effects/Fury.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Vigor.png"> Vigor' class="icon" src="../assets/Effects/Vigor.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Swiftness.png"> Swiftness' class="icon" src="../assets/Effects/Swiftness.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Swiftness.png"> Regeneration' class="icon" src="../assets/Effects/Regeneration.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Spotter.png"> Spotter' class="icon" src="../assets/Effects/Spotter.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Sun_Spirit.png"> Sun Spirit' class="icon" src="../assets/Effects/Sun_Spirit.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Frost_Spirit.png"> Frost Spirit' class="icon" src="../assets/Effects/Frost_Spirit.png">
+                        </span>
+                      </dd>
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
+                      <dd class="col-sm-9 text-muted">
+                        <span>
+                          Designated Bannerslave.<br>
+                          Provides:
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Empower_Allies.png"> Empower Allies' class="icon" src="../assets/Effects/Empower_Allies.png"> 
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Banner_of_Discipline.png"> Banner of Discipline' class="icon" src="../assets/Effects/Banner_of_Discipline.png">
+                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Effects/Banner_of_Strength.png"> Banner_of_Strength' class="icon" src="../assets/Effects/Banner_of_Strength.png">
+                        </span>
+                      </dd>
+                      <dt class="col-sm-3"><img class="icon" src="../assets/Icons/Any.png">Everyone</dt>
+                      <dd class="col-sm-9 text-muted">
+                        <span>
+                          DPS, Communicate and use Crowd Control skills when needed.
+                        </span><br>
+                        <span class="text-warning">Assign 2 DPS (Ideally Soulbeast or Renegade), for Cannon Duty.
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="tab-pane fade element-inner" id="nav-sabetha-dps" role="tabpanel" aria-labelledby="nav-sabetha-dps-tab">
+                  <div class="element-inner">
+                    <p class="text-muted">
+                      
+                    </p>
+                  </div>
+                  <table class="table table-sm">
+                    <tbody>
+                      <tr>
+                        <th class="colored">Optimal</th>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Holosmith.png"><img class="icon" src="../assets/Icons/Power.png"> Holosmith (Power)'><img class="icon" src="../assets/Icons/Holosmith.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Dragonhunter.png"><img class="icon" src="../assets/Icons/Power.png"> Dragonhunter (Power)'><img class="icon" src="../assets/Icons/Dragonhunter.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Renegade.png"><img class="icon" src="../assets/Icons/Condi.png"> Renegade (Condi)'><img class="icon" src="../assets/Icons/Renegade.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Soulbeast.png"><img class="icon" src="../assets/Icons/Condi.png"> Soulbeast (Condi)'><img class="icon" src="../assets/Icons/Soulbeast.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                      </tr>
+                      <tr>
+                        <th class="colored">Viable</th>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Engineer.png"><img class="icon" src="../assets/Icons/Condi.png"> Engineer (Condi)'><img class="icon" src="../assets/Icons/Engineer.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Firebrand.png"><img class="icon" src="../assets/Icons/Condi.png"> Firebrand (Condi)'><img class="icon" src="../assets/Icons/Firebrand.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Condi.png"> Daredevil (Condi)'><img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"> Daredevil (Power)'><img class="icon" src="../assets/Icons/Daredevil.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Mirage.png"><img class="icon" src="../assets/Icons/Condi.png"> Mirage (Condi)'><img class="icon" src="../assets/Icons/Mirage.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Scourge.png"><img class="icon" src="../assets/Icons/Condi.png"> Scourge (Condi)'><img class="icon" src="../assets/Icons/Scourge.png"><img class="icon" src="../assets/Icons/Condi.png"></td>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"> Weaver (Power)'><img class="icon" src="../assets/Icons/Weaver.png"><img class="icon" src="../assets/Icons/Power.png"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-light">
+            <a class="card-header" data-toggle="collapse" data-target="#sabethamechanics" role="button" aria-expanded="false" aria-controls="sabethamechanics">
+              <img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
+            </a>
+            <div class="card-body collapse" id="sabethamechanics">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-sab-mechanics-tab" data-toggle="tab" href="#nav-sab-mechanics" role="tab" aria-controls="nav-sab-mechanics" aria-selected="true">Mechanics</a>
+                  <a class="nav-item nav-link" id="nav-sab-walkthrough-tab" data-toggle="tab" href="#nav-sab-walkthrough" role="tab" aria-controls="nav-sab-walkthrough" aria-selected="false">Walkthrough</a>
+                </div>
+              </nav>
+              <div class="tab-content element-background" id="nav-tabContent">
+                <div class="tab-pane element-inner fade show active" id="nav-sab-mechanics" role="tabpanel" aria-labelledby="nav-sab-mechanics-tab">
+                  <div class="element-inner">
+                    <dl class="row ">
+                      <dt class="col-sm-3">Mechanic</dt>
+                      <dd class="col-sm-9 text-muted">Explanation</dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="tab-pane element-inner fade" id="nav-sab-walkthrough" role="tabpanel" aria-labelledby="nav-sab-walkthrough-tab">
+                  <div class="element-inner">
+                    <b>Preparation</b>
+                    <p class="text-muted"><br>
+                    Check your traits/skills/gear, eat your food/utility.</p>
 
-                        </p>
-
-                        <b> Phase 2 (Vale Division)</b>
-                        <div class="progress">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">66%</div>
-                        </div>
-                         <p class="text-muted"><b>Active Mechanics</b>: Blue Guardian - Distributed Magic, Green Guardian - Unstable Magic Spike, Red Guardian - Seekers, Bullet Storm.<br>
-                         Split according to prior decision and kill the Guardians as fast as possible.</p>
-
-                        <b> Phase 3 </b>
-                        <div class="progress">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100">66%</div>
-                        </div>
-                        <p class="text-muted"><b>Active Mechanics</b>: Distributed Magic, Unstable Magic Spike, Seekers, Unstable Pylon, Magic Storm.<br>
-                        Start in the red segment and keep rotating around every <span class="text-warning">20 seconds</span> (Tank should move 3 seconds earlier).
-                        Call out breakbars and greens. These will sometimes be present at the same time, making it slightly difficult to break for some groups.
-                        </p>
-
-                        <b>Phase 4 (Vale Division)</b>
-                        <div class="progress">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
-                        </div>
-                        <p class="text-muted"><b>Active Mechanics</b>: Blue Guardian - Distributed Magic, Green Guardian - Unstable Magic Spike, Red Guardian - Seekers, Bullet Storm.<br>
-                         Split according to prior decision and kill the Guardians as fast as possible.</p>
-
-                        <b>Phase 5 </b>
-                        <div class="progress">
-                          <div class="progress-bar bg-warning" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100">33%</div>
-                        </div>
-                        <p class="text-muted"><b>Active Mechanics</b>: Distributed Magic, Unstable Magic Spike, Seekers, Unstable Pylon, Magic Storm.<br>
-                        An additional floor segment will light up and an additional Seeker will spawn.<br>
-                        <br>
-                        Start in the red segment and keep rotating around every <span class="text-warning">20 seconds</span> (Tank should move 5 seconds earlier).<br>
-                        Call out breakbars and greens. These will sometimes be present at the same time, making it slightly difficult to break for some groups.<br><br>
-                        Stay calm, stay focused. Things can get hectic, but losing focus will only make it worse.
-
-                        </p>
-                      </div>
-                      <div class="col-sm-6">
-                        <!--
-                        <div class="card bg-light">
-                          <div class="card-body">
-                            <p></p>
-                          </div>
-                        </div>
-                        -->
+                    <b>Phase 1</b>
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                     </div>
                   </div>
                 </div>

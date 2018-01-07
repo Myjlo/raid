@@ -103,3 +103,10 @@ body {
     background: rgba(0,0,0,0.25); 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
+body, html {
+    cursor: url(../assets/Cursors/Regular.png), auto;
+}
+
+a, .btn, .card-head {
+	cursor: url(../assets/Cursors/Link.png), auto;
+}
