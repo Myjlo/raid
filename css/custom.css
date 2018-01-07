@@ -14,9 +14,10 @@ body {
 	box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.25);
 	margin-bottom: 30px;
 }
-.role {
+.icon {
 	margin-left: 2px;
-	size: 20px;
+	width: 20px;
+	height: 20px;
 }
 .title-image {
 	margin-right: 5px;
@@ -26,6 +27,7 @@ body {
 .colored {
 	color: #F39C12;
 }
+
 .boss-image {
 	padding: 3px;
 }
@@ -38,4 +40,66 @@ body {
 
 .element-inner {
 	padding: 3px;
+}
+
+/*text*/
+
+.elementalist {
+	color: #F68A87;
+}
+
+.mesmer {
+	color: #B679D5;
+}
+
+.necromancer {
+	color: #52A76F;
+}
+
+.ranger {
+	color: #8CDC82;
+}
+
+.thief {
+	color: #C08F95;
+}
+
+.engineer {
+	color: #D09C59;
+}
+
+.warrior {
+	color: #FFD166;
+}
+
+.guardian {
+	color: #72C1D9;
+}
+
+.revenant {
+	color: #D16E5A;
+}
+.effect {
+	color: #eee;
+	font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    margin-right: 2px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    opacity:0.1;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.25); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }

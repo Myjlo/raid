@@ -3,65 +3,76 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>Chentally Melanged [pleb] - Spirit Vale</title>
 <!--CSS/Scripts-->
     <link href="css/stylesheet.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
   </head>
 
   <body>
 <!--Nav-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-custom navbar-expand-lg fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="#">[<span class="colored">pleb</span>]</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Raids
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Wing 1</a>
-              <a class="dropdown-item" href="#">Wing 2</a>
-              <a class="dropdown-item" href="#">Wing 3</a>
-              <a class="dropdown-item" href="#">Wing 4</a>
-              <a class="dropdown-item" href="#">Wing 5</a>
+              <a class="dropdown-item" href="Raids/Spirit_Vale.html">Wing 1</a>
+              <a class="dropdown-item disabled" href="Raids/Salvation_Pass.html">Wing 2</a>
+              <a class="dropdown-item disabled" href="Raids/Stronghold_of_the_Faithful.html">Wing 3</a>
+              <a class="dropdown-item disabled" href="Raids/Bastion_of_the_Penitent.html">Wing 4</a>
+              <a class="dropdown-item disabled" href="Raids/Hall_of_Chains.html">Wing 5</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Builds</a>
+              <a class="dropdown-item" href="http://www.snowcrows.com/raids">Builds</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link active" href="#">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
 <!--Content-->
     <main role="main" class="container">
-      <div class="starter-template">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.
-        HAHAHA</p>
+      
+
+      <div class="row">
+        <div class="col-lg"> 
+          <div class="card bg-light">
+            <div class="card-header"><img src="assets/Icons/Contact.png" width="32px" height="32px" class="title-image"><b>Contact</b></div>
+            <div class="card-body">
+              <div class="element-background">
+                <div class="element-inner" style="overflow-y: scroll; max-height: 300px; min-height:300px;">
+                  Imagine Content here, kthnx... 
+                  <br>:)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   </body>
