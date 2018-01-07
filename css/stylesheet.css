@@ -1641,7 +1641,6 @@ pre code {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 1rem;
   background-color: transparent;
 }
 
@@ -1649,12 +1648,12 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border-top: 1px solid #444;
+  border-top: none !important;
 }
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #444;
+  border-bottom: none !important;
 }
 
 .table tbody + tbody {
@@ -3809,7 +3808,7 @@ tbody.collapse.show {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #444;
+  margin-bottom: -2px;
 }
 
 .nav-tabs .nav-item {
@@ -3822,9 +3821,6 @@ tbody.collapse.show {
   border-top-right-radius: 0.25rem;
 }
 
-.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-  border-color: #444;
-}
 
 .nav-tabs .nav-link.disabled {
   color: #ebebeb;
@@ -3836,7 +3832,6 @@ tbody.collapse.show {
 .nav-tabs .nav-item.show .nav-link {
   color: #444;
   background-color: #222;
-  border-color: #444;
 }
 
 .nav-tabs .dropdown-menu {
@@ -5048,10 +5043,10 @@ tbody.collapse.show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 12px;
+  height: 13px;
   overflow: hidden;
   font-size: 10px;
-  background-color: #444;
+  background-color: #222;
   border-radius: 0.25rem;
 }
 
@@ -9036,6 +9031,17 @@ a.text-dark:focus, a.text-dark:hover {
 .nav-pills .nav-item.open .nav-link:focus,
 .nav-pills .nav-item.open .nav-link:hover {
   color: #fff;
+}
+
+.nav-tabs .nav-link {
+  color: #F39C12;
+}
+.nav-tabs .nav-link:hover {
+  color: #FBD9A5;
+  text-decoration: underline;
+}
+.nav-tabs .nav-link.active:hover {
+  text-decoration: none;
 }
 
 .breadcrumb a {
