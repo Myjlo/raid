@@ -1,3 +1,12 @@
 body {
     padding-top: 5rem;
 }
+
+
+.role {
+	margin-left: 2px;
+}
+
+.subgroup {
+	color: #F39C12;
+}
