@@ -13,8 +13,6 @@
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/open-iconic-bootstrap.css" rel="stylesheet">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
@@ -23,42 +21,6 @@
         $('[data-toggle="tooltip"]').tooltip()
       })
       $('body').scrollspy({target: ".navbar", offset: 50});
-      $('a[href*="#"]')
-		  // Remove links that don't actually link to anything
-
-		  .not('[href="#"]')
-		  .not('[href="#0"]')
-		  .click(function(event) {
-		    // On-page links
-		    if (
-		      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-		      && 
-		      location.hostname == this.hostname
-		    ) {
-		      // Figure out element to scroll to
-		      var target = $(this.hash);
-		      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		      // Does a scroll target exist?
-		      if (target.length) {
-		        // Only prevent default if animation is actually gonna happen
-		        event.preventDefault();
-		        $('html, body').animate({
-		          scrollTop: target.offset().top
-		        }, 1000, function() {
-		          // Callback after animation
-		          // Must change focus!
-		          var $target = $(target);
-		          $target.focus();
-		          if ($target.is(":focus")) { // Checking if the target was focused
-		            return false;
-		          } else {
-		            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-		            $target.focus(); // Set focus again
-		          };
-		        });
-		      }
-		    }
-		  });
     </script>
 
   </head>
@@ -480,9 +442,8 @@
           <div class="card bg-light">
             <div class="card-header">
               <img src="../assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b>
-              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#matthiascomposition" role="button" aria-expanded="false" aria-controls="matthiascomposition""></a>
             </div>
-            <div class="card-body collapse" id="matthiascomposition"> 
+            <div class="card-body"> 
               <div class="element-background">
                 <div class="element-inner">
                   <table class="table table-sm">
