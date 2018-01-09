@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="page-background-w4">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,8 @@
     <link href="../css/stylesheet.css" rel="stylesheet">
     <link href="../css/custom.css" rel="stylesheet">
     <link href="../css/open-iconic-bootstrap.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
@@ -20,7 +22,34 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+			$(document).ready(function(){
+			  // Add scrollspy to <body>
+			  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+			  // Add smooth scrolling on all links inside the navbar
+			  $("#myNavbar a").on('click', function(event) {
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    }  // End if
+			  });
+			});
     </script>
+
   </head>
 
   <body>
@@ -51,7 +80,13 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../contact.html">Contact</a>
+            <a class="nav-link nav-link-inverse" href="#slothasor">Slothasor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-inverse" href="#banditcamp">Bandit Camp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-inverse" href="#matthias">Matthias</a>
           </li>
         </ul>
       </div>
@@ -59,7 +94,7 @@
 
     <main role="main" class="container">
 <!--Slothasor-->
-      <div class="row">
+      <div class="row" id="slothasor">
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Slothasor</b></div>
@@ -202,7 +237,7 @@
           <div class="card bg-light">
             <div class="card-header">
               <img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
-              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#slothmechanics" role="button" aria-expanded="false" aria-controls="slothmechanics""></a>
+              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#slothmechanics" role="button" aria-expanded="false" aria-controls="slothmechanics"></a>
             </div>
             <div class="card-body collapse" id="slothmechanics">
               <nav>
@@ -234,7 +269,7 @@
       </div>
       <hr>
 <!--Bandit Camp-->
-      <div class="row">
+      <div class="row" id="banditcamp">
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Bandit Camp</b></div>
@@ -375,7 +410,7 @@
           <div class="card bg-light">
             <div class="card-header">
               <img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
-              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#banditcampmechanics" role="button" aria-expanded="false" aria-controls="banditcampmechanics""></a>
+              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#banditcampmechanics" role="button" aria-expanded="false" aria-controls="banditcampmechanics"></a>
             </div>
             <div class="card-body collapse" id="banditcampmechanics">
               <nav>
@@ -407,7 +442,7 @@
       </div>
       <hr>
 <!--Matthias-->
-      <div class="row">
+      <div class="row" name="matthias" id="matthias">
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Matthias Gabrel</b></div>
@@ -434,8 +469,9 @@
           <div class="card bg-light">
             <div class="card-header">
               <img src="../assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b>
+              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#matthiascomposition" role="button" aria-expanded="false" aria-controls="matthiascomposition""></a>
             </div>
-            <div class="card-body"> 
+            <div class="card-body collapse" id="matthiascomposition"> 
               <div class="element-background">
                 <div class="element-inner">
                   <table class="table table-sm">
@@ -553,7 +589,7 @@
           <div class="card bg-light">
             <div class="card-header">
               <img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
-              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#matthiasmechanics" role="button" aria-expanded="false" aria-controls="matthiasmechanics""></a>
+              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#matthiasmechanics" role="button" aria-expanded="false" aria-controls="matthiasmechanics"></a>
             </div>
             <div class="card-body collapse" id="matthiasmechanics">
               <nav>
