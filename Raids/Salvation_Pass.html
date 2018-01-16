@@ -67,7 +67,7 @@
 
     <main role="main" class="container">
 <!--Slothasor-->
-      <div class="row" id="slothasor">
+      <div class="row anchor" id="slothasor">
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Slothasor</b></div>
@@ -242,7 +242,8 @@
       </div>
       <hr>
 <!--Bandit Camp-->
-      <div class="row" id="banditcamp">
+      <div class="row">
+      	<a class="anchor" id="banditcamp"></a>
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Bandit Camp</b></div>
@@ -265,12 +266,12 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8">
-          <div class="card bg-light">
-            <div class="card-header">
+        <div class="col-lg-8 group" id="accordion" role="tablist" aria-multiselectable="false">
+          <div class="card bg-light" data-toggle="collapse" data-parent="#accordion" href="#banditcampcomposition" aria-expanded="true" aria-controls="banditcampcomposition">
+            <div class="card-header" role="tab" id="banditcampheading1">
               <img src="../assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b>
             </div>
-            <div class="card-body"> 
+            <div class="card-body collapse in" id="banditcampcomposition" role="tabpanel" aria-labelledby="banditcampcomposition"> 
               <div class="element-background">
                 <div class="element-inner">
                   <table class="table table-sm">
@@ -380,12 +381,11 @@
               </div>
             </div>
           </div>
-          <div class="card bg-light">
-            <div class="card-header">
+          <div class="card bg-light" data-toggle="collapse" data-parent="#accordion" href="#banditcampmechanics" aria-expanded="false" aria-controls="banditcampheading1">
+            <div class="card-header" role="tab" id="banditcampheading2">
               <img src="../assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
-              <a class="oi oi-excerpt float-right btn btn-secondary" data-toggle="collapse" data-target="#banditcampmechanics" role="button" aria-expanded="false" aria-controls="banditcampmechanics"></a>
             </div>
-            <div class="card-body collapse" id="banditcampmechanics">
+            <div class="card-body collapse" id="banditcampmechanics" role="tabpanel" aria-labelledby="banditcampheading2"> 
               <nav>
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-banditcamp-mechanics-tab" data-toggle="tab" href="#nav-banditcamp-mechanics" role="tab" aria-controls="nav-banditcamp-mechanics" aria-selected="true">Mechanics</a>
@@ -410,12 +410,14 @@
                 </div>
               </div>
             </div>
-          </div>
+        	</div>
+        </div>
         </div>
       </div>
       <hr>
 <!--Matthias-->
-      <div class="row" name="matthias" id="matthias">
+      <div class="row anchor">
+      	<a class="anchor" id="matthias"></a>
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="../assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Matthias Gabrel</b></div>
@@ -593,4 +595,5 @@
       </div>
     </main>
   </body>
+
 </html>

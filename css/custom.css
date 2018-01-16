@@ -88,26 +88,6 @@ body {
 	color: #eee;
 	font-weight: bold;
 }
-
-::-webkit-scrollbar {
-    width: 6px;
-    margin-right: 2px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    opacity:0.1;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.25); 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
 html {
     cursor: url(../assets/Cursors/Regular.png), auto;
 }
@@ -116,8 +96,8 @@ a, .btn, .card-head {
 	cursor: url(../assets/Cursors/Link.png), auto;
 }
 
-.page-background-w4 {
-	background: url(../assets/Backgrounds/Background_w4.jpg);
+.page-background {
+	background: url(https://i.imgur.com/0KrJWvW.jpg);
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
