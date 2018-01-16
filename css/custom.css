@@ -84,9 +84,12 @@ body {
 .revenant {
 	color: #D16E5A;
 }
-.effect {
-	color: #eee;
+.text-effect {
+	color: #fff;
 	font-weight: bold;
+}
+.healthbar {
+	margin: 3px 0 0 0;
 }
 html {
     cursor: url(../assets/Cursors/Regular.png), auto;
