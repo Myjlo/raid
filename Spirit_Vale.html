@@ -13,11 +13,19 @@
     <link href="css/stylesheet.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/open-iconic-bootstrap.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <script type='text/javascript'>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
   </head>
 
-  <body class="background-w1">
+  <body class="background-w1" data-spy="scroll" data-target=".navbar" data-offset="0">
   <!--Nav-->
-    <nav class="navbar navbar-custom navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-custom navbar-expand-lg fixed-top navbar-light bg-nav">
       <a class="navbar-brand" href="#">[<span class="colored">pleb</span>]</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,30 +34,42 @@
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Raids
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item active" href="Spirit_Vale.html">Spirit Vale</a>
-              <a class="dropdown-item disabled" href="Salvation_Pass.html">Salvation Pass</a>
-              <a class="dropdown-item disabled" href="Stronghold_of_the_Faithful.html">Stronghold of the Faithful</a>
-              <a class="dropdown-item disabled" href="Bastion_of_the_Penitent.html">Bastion of the Penitent</a>
-              <a class="dropdown-item disabled" href="Hall_of_Chains.html">Hall of Chains</a>
+              <a class="dropdown-item active" href="Spirit_Vale">Spirit Vale</a>
+              <a class="dropdown-item disabled" href="Salvation_Pass">Salvation Pass</a>
+              <a class="dropdown-item disabled" href="Stronghold_of_the_Faithful">Stronghold of the Faithful</a>
+              <a class="dropdown-item disabled" href="Bastion_of_the_Penitent">Bastion of the Penitent</a>
+              <a class="dropdown-item disabled" href="Hall_of_Chains">Hall of Chains</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="http://www.snowcrows.com/raids">Builds</a>
+              <a class="dropdown-item" target="_blank" href="http://www.snowcrows.com/builds">
+                Builds <span class="oi oi-external-link"></span>
+              </a>
             </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#Vale_Guardian">Vale Guardian</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Gorseval">Gorseval</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Sabetha">Sabetha</a>
           </li>
         </ul>
       </div>
     </nav>
   <!--Content-->
     <main role="main" class="container">
-      <a name="top" id="top"></a>
     <!--Vale Guardian-->
-      <div class="row">
+      <div class="row anchor" id="Vale_Guardian">
       <!--Vale Guardian Info Panel-->
         <div class="col-lg-4">
           <div class="card bg-light">
@@ -253,7 +273,7 @@
       </div>
       <hr>
     <!--Gorseval-->
-      <div class="row">
+      <div class="row" id="Gorseval">
       <!--Gorseval Info Panel-->
         <div class="col-lg-4">
           <div class="card bg-light">
@@ -451,7 +471,7 @@
       </div>
       <hr>
     <!--Sabetha-->
-      <div class="row">
+      <div class="row" id="Sabetha">
       <!--Sabetha Info Panel-->
         <div class="col-lg-4">
           <div class="card bg-light">
@@ -638,20 +658,12 @@
             </div>
           </div>
         </div>
-      <a href="#top" id="goTop">Back to top</a>
       </div>
     </main>
-    <script src="/js/scroll.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-    <script type='text/javascript'>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-      $('#goTop').on('click', function(e){
-          $("html, body").animate({scrollTop: $("#top").offset().top}, 500);
-      });
-    </script>
+    <footer class="footer">
+      <div class="container">
+          <span class="text-muted">fereooter content h.</span>
+      </div>
+    </footer>
   </body>
 </html>
