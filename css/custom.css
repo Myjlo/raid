@@ -50,6 +50,13 @@ body {
 	padding: 3px;
 }
 
+.anchor {
+	display: block;
+    position: relative;
+    top: -30px;
+    visibility: hidden;
+}
+
 /*text*/
 
 .elementalist {
