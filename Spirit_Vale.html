@@ -9,7 +9,7 @@
     <link rel="icon" href="/favicon.ico">
 
     <title>Spirit Vale</title>
-<!--CSS/Scripts-->
+
     <link href="css/stylesheet.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/open-iconic-bootstrap.css" rel="stylesheet">
@@ -23,8 +23,8 @@
     </script>
   </head>
 
-  <body class="page-background">
-<!--Nav-->
+  <body class="w1">
+  <!--Nav-->
     <nav class="navbar navbar-custom navbar-expand-lg fixed-top navbar-light bg-light">
       <a class="navbar-brand" href="#">[<span class="colored">pleb</span>]</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +53,11 @@
         </ul>
       </div>
     </nav>
-
+  <!--Content-->
     <main role="main" class="container">
-<!--Vale Guardian-->
+    <!--Vale Guardian-->
       <div class="row">
+      <!--Vale Guardian Info Panel-->
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Vale Guardian</b></div>
@@ -64,7 +65,6 @@
               <div class="element-background boss-align">
                 <img src="assets/Bosses/Vale_Guardian.jpg" class="boss-image img-fluid" alt="Vale Guardian">
               </div>
-
               <dl class="row">
                 <dt class="col-sm-4">Difficulty</dt>
                 <dd class="col-sm-8">Medium</dd>
@@ -75,7 +75,7 @@
                 <dt class="col-sm-4">Health</dt>
                 <dd class="col-sm-8">
                   <div class="progress healthbar">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">22.000.000/22.000.000</div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">22.000.000</div>
                   </div>
                 </dd>
                 <dt class="col-sm-4">Timer</dt>
@@ -84,7 +84,9 @@
             </div>
           </div>
         </div>
+      <!--Vale Guardian Main Panel-->
         <div class="col-lg-8">
+        <!--Vale Guardian Composition-->
           <div class="card bg-light">
             <div class="card-header">
               <img src="assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b>
@@ -174,19 +176,18 @@
                     <p class="text-muted">
                       For <b>Vale Guardian</b> you need at least 2 Condi DPS classes to kill the <b>Red Guardian</b> during the split fase at <b>66%</b> and <b>33%</b>.
                       The remaining spots should preferably be filled with Power DPS classes that have a high amount of burst.
-                    </p>
                   </div>
                   <table class="table table-sm">
                     <tbody>
                       <tr>
-                        <th class="colored">Optimal</th>
+                        <th>Optimal</th>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Holosmith.png"><img class="icon" src="assets/Icons/Power.png"> Holosmith (Power)'><img class="icon" src="assets/Icons/Holosmith.png"><img class="icon" src="assets/Icons/Power.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Dragonhunter.png"><img class="icon" src="assets/Icons/Power.png"> Dragonhunter (Power)'><img class="icon" src="assets/Icons/Dragonhunter.png"><img class="icon" src="assets/Icons/Power.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Renegade.png"><img class="icon" src="assets/Icons/Condi.png"> Renegade (Condi)'><img class="icon" src="assets/Icons/Renegade.png"><img class="icon" src="assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Soulbeast.png"><img class="icon" src="assets/Icons/Condi.png"> Soulbeast (Condi)'><img class="icon" src="assets/Icons/Soulbeast.png"><img class="icon" src="assets/Icons/Condi.png"></td>
                       </tr>
                       <tr>
-                        <th class="colored">Viable</th>
+                        <th>Viable</th>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Engineer.png"><img class="icon" src="assets/Icons/Condi.png"> Engineer (Condi)'><img class="icon" src="assets/Icons/Engineer.png"><img class="icon" src="assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Firebrand.png"><img class="icon" src="assets/Icons/Condi.png"> Firebrand (Condi)'><img class="icon" src="assets/Icons/Firebrand.png"><img class="icon" src="assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Daredevil.png"><img class="icon" src="assets/Icons/Condi.png"> Daredevil (Condi)'><img class="icon" src="assets/Icons/Daredevil.png"><img class="icon" src="assets/Icons/Condi.png"></td>
@@ -202,6 +203,7 @@
               </div>
             </div>
           </div>
+        <!--Vale Guardian Mechanics-->
           <div class="card bg-light">
             <div class="card-header">
               <img src="assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
@@ -212,31 +214,42 @@
                 <div class="element-inner">
                   <div class="element-inner">
                     <dl class="row ">
-                      <dt class="col-sm-3">Distributed Magic</dt>
-                      <dd class="col-sm-9 text-muted">Green Circles spawn every <span class="text-effect">15 seconds</span> in a random location in the same sector as the boss. You have about <span class="text-effect">5 seconds</span> to get 4 players into them to negate heavy damage.</dd>
-                      <dt class="col-sm-3">Unstable Magic Spike</dt>
-                      <dd class="col-sm-9 text-muted">Blue Circles spawn every <span class="text-effect">9 seconds</span> within melee range of the Vale Guardian. They last for about <span class="text-effect">2 seconds</span> and then they will explode, dealing damage and teleporting anyone caught in them to a random location. Dodges/evades work against them but you have more than enough time to walk out them.</dd>
-                      <dt class="col-sm-3">Seekers</dt>
-                      <dd class="col-sm-9 text-muted">Three Red Seeker orbs spawn every <span class="text-effect">20 seconds</span> in each of the floor segments. Their goal is to move towards the players and deal heavy damage to them. They can be immobilized or knocked back.<br>
-                      <span class="text-danger">In Phase 5 an additional Seeker spawns in the middle of the arena!</span></dd>
-                      <dt class="col-sm-3">Vale Division</dt>
-                      <dd class="col-sm-9 text-muted">
-                      Vale Guardian will become invulnerable and split up into the 3 Mini-Bosses you've fought before.<br>
-                      You only have a few seconds to get into the right colored section to get the attunement. Once you get this attunement buff, you will receive heavy damage if you are inside the red circle of a different colored guardian unless your guardian has been killed.<br>
-                      <br>
-                      You should have decided pre-fight which members of your raid team are going to each guardian. 
-                      For the Red Guardian you will need at least 2 Condi DPS. The Chronotank should aggro the Green Guardian and move him towards the Blue Guardian, which should meanwhile be getting killed by the rest of the squad. Break the breakbars to kill the guardians.</dd>
-                      <dt class="col-sm-3">Bullet Storm</dt>
-                      <dd class="col-sm-9 text-muted">
-                      During Phase 2 and 4, you will see multiple, slow moving, white orbs causing damage. If one of these orbs touches the Blue Guardian, it grants it Blue Pylon Power rendering it invulnerable until it is stripped.</dd>
-                      <dt class="col-sm-3">Unstable Pylon</dt>
-                      <dd class="col-sm-9 text-muted">
-                      Starting from Phase 3, one floor segment will light up and deal heavy damage to players standing in them.<br>
-                      This segment rotates every <span class="text-effect">20 seconds</span>. The tank should start the boss at the red segment and then drag him clockwise to the next segment as soon as possible to prevent the green circle from spawning too far behind.<br>
-                      <span class="text-danger">In Phase 5 an additional segment is energized!</span></dd>
-                      <dt class="col-sm-3">Magic Storm</dt>
-                      <dd class="col-sm-9 text-muted">
-                      Starting from Phase 3, every <span class="text-effect">30 seconds</span> Vale Guardian will stop moving and gain a breakbar. While this breakbar is active, the boss will constantly spam AoE orbs at the raid. Break this breakbar as soon as it appears or a green circle can spawn too far behind.</dd>
+                      <dt class="mechanics col-sm-3">Distributed Magic</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Green Circles spawn every <span class="text-effect">15 seconds</span> in a random location in the same sector as the boss. You have about <span class="text-effect">5 seconds</span> to get 4 players into them to negate heavy damage.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Unstable Magic Spike</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Blue Circles spawn every <span class="text-effect">9 seconds</span> within melee range of the Vale Guardian. They last for about <span class="text-effect">2 seconds</span> and then they will explode, dealing damage and teleporting anyone caught in them to a random location. Dodges/evades work against them but you have more than enough time to walk out them.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Seekers</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Three Red Seeker orbs spawn every <span class="text-effect">20 seconds</span> in each of the floor segments. Their goal is to move towards the players and deal heavy damage to them.<br>
+                        Slow them with <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Immobile.png"> Immobilize' class="icon" src="assets/Effects/Immobile.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Chilled.png"> Chill' class="icon" src="assets/Effects/Chilled.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Crippled.png"> Cripple' class="icon" src="assets/Effects/Crippled.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Knockback.png"> Knockback' class="icon" src="assets/Effects/Knockback.png">.<br>
+                        <span class="colored">Past <b>33%</b> an additional Seeker spawns in the middle of the arena!</span>
+                      </dd>
+                      <dt class="mechanics col-sm-3">Vale Division</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Vale Guardian will become invulnerable and split up into the 3 Mini-Bosses you've fought before.<br>
+                        You only have a few seconds to get into the right colored section to get the attunement. Once you get this attunement buff, you will receive heavy damage if you are inside the red circle of a different colored guardian unless your guardian has been killed.<br>
+                        <br>
+                        You should have decided pre-fight which members of your raid team are going to each guardian. 
+                        For the Red Guardian you will need at least 2 Condi DPS. The Chronotank should aggro the Green Guardian and move him towards the Blue Guardian, which should meanwhile be getting killed by the rest of the squad. Break the breakbars to kill the guardians.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Bullet Storm</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        During Vale Division, you will see multiple, slow moving, white orbs causing damage. If one of these orbs touches the Blue Guardian, it grants it Blue Pylon Power rendering it invulnerable until it is stripped.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Unstable Pylon</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        At <b>66%</b>, one floor segment will light up and deal heavy damage to players standing in them.<br>
+                        This segment rotates every <span class="text-effect">20 seconds</span>. The tank should start the boss at the red segment and then drag him clockwise to the next segment as soon as possible to prevent the green circle from spawning too far behind.<br>
+                        <span class="colored">Past <b>33%</b> an additional segment will light up!</span>
+                      </dd>
+                      <dt class="mechanics col-sm-3">Magic Storm</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Past <b>66%</b>, every <span class="text-effect">30 seconds</span> Vale Guardian will stop moving and gain a breakbar. While this breakbar is active, the boss will constantly spam AoE orbs at the raid. Break this breakbar as soon as it appears or a green circle can spawn too far behind.
+                      </dd>
                     </dl>
                   </div>
                 </div>
@@ -246,9 +259,9 @@
         </div>
       </div>
       <hr>
-<!--Gorseval-->
+    <!--Gorseval-->
       <div class="row">
-      <!--Boss Info-->
+      <!--Gorseval Info Panel-->
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Gorseval the Multifarious</b></div>
@@ -263,16 +276,21 @@
                 <dd class="col-sm-8">250 (Large)</dd>
                 <dt class="col-sm-4">Armor</dt>
                 <dd class="col-sm-8">2597</dd>
-                <dt class="col-sm-4">Enrage</dt>
-                <dd class="col-sm-8">7:00</dd>
                 <dt class="col-sm-4">Health</dt>
-                <dd class="col-sm-8">21.6 Million</dd>
+                <dd class="col-sm-8">
+                  <div class="progress healthbar">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">21.600.000</div>
+                  </div>
+                </dd>
+                <dt class="col-sm-4">Timer</dt>
+                <dd class="col-sm-8">7:00</dd>
               </dl>
             </div>
           </div>
         </div>
-        <!--Group Composition-->
+      <!--Gorseval Main Panel-->
         <div class="col-lg-8">
+        <!--Gorseval Composition-->
           <div class="card bg-light">
             <div class="card-header"><img src="assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b></div>
             <div class="card-body">
@@ -348,7 +366,7 @@
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Any.png">Everyone</dt>
                       <dd class="col-sm-9 text-muted">
                         <span>
-                          DPS, Clear Orbs of Darkness, Communicate and use Crowd Control skills when needed.
+                          DPS, Clear Spectral Orbs, Communicate and use Crowd Control skills when needed.
                         </span>
                       </dd>
                     </dl>
@@ -357,20 +375,20 @@
                 <div class="tab-pane fade element-inner" id="nav-gorse-dps" role="tabpanel" aria-labelledby="nav-gorse-dps-tab">
                   <div class="element-inner">
                     <p class="text-muted">
-                      
-                    </p>
+                      Due to <b>Gorseval</b> having a large hitbox, having DPS classes that benefit from that is the most obvious choice.<br>
+                      This has to be balanced out with the amount of Crowd Control.
                   </div>
                   <table class="table table-sm">
                     <tbody>
                       <tr>
-                        <th class="colored">Optimal</th>
+                        <th>Optimal</th>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Weaver.png"><img class="icon" src="assets/Icons/Power.png"> Weaver (Power)'><img class="icon" src="assets/Icons/Weaver.png"><img class="icon" src="assets/Icons/Power.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Holosmith.png"><img class="icon" src="assets/Icons/Power.png"> Holosmith (Power)'><img class="icon" src="assets/Icons/Holosmith.png"><img class="icon" src="assets/Icons/Power.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Dragonhunter.png"><img class="icon" src="assets/Icons/Power.png"> Dragonhunter (Power)'><img class="icon" src="assets/Icons/Dragonhunter.png"><img class="icon" src="assets/Icons/Power.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Renegade.png"><img class="icon" src="assets/Icons/Condi.png"> Renegade (Condi)'><img class="icon" src="assets/Icons/Renegade.png"><img class="icon" src="assets/Icons/Condi.png"></td>
                       </tr>
                       <tr>
-                        <th class="colored">Viable</th>
+                        <th>Viable</th>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Soulbeast.png"><img class="icon" src="assets/Icons/Condi.png"> Soulbeast (Condi)'><img class="icon" src="assets/Icons/Soulbeast.png"><img class="icon" src="assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Engineer.png"><img class="icon" src="assets/Icons/Condi.png"> Engineer (Condi)'><img class="icon" src="assets/Icons/Engineer.png"><img class="icon" src="assets/Icons/Condi.png"></td>
                         <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Firebrand.png"><img class="icon" src="assets/Icons/Condi.png"> Firebrand (Condi)'><img class="icon" src="assets/Icons/Firebrand.png"><img class="icon" src="assets/Icons/Condi.png"></td>
@@ -386,6 +404,7 @@
               </div>
             </div>
           </div>
+        <!--Gorseval Mechanics-->
           <div class="card bg-light">
             <div class="card-header">
               <img src="assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
@@ -395,19 +414,40 @@
               <div class="element-background">
                 <div class="element-inner">
                   <div class="element-inner">
-                    <dl class="row ">
-                      <dt class="col-sm-3">Spectral Impact</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Ghastly Rampage</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">World Eater</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Charged Souls</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Spectral Darkness</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Ghastly Prison</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
+                    <dl class="row">
+                      <dt class="mechanics col-sm-3">Spectral Impact</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Gorseval will raise his arm up in the air and slam into the ground, knocking people down. This should be evaded or blocked with <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Aegis.png"> Aegis' class="icon" src="assets/Effects/Aegis.png">. 
+                      </dd>
+                      <dt class="mechanics col-sm-3">Ghastly Rampage</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Gorseval slam the ground repeatedly, creating patterns of black, ghastly material on the floor.<br>
+                        After 3 seconds, the black material deals heavy damage while applying <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Vulnerability.png"> Vulnerability' class="icon" src="assets/Effects/Vulnerability.png">.<br>
+                        Breaking Gorseval's breakbar interrupts this skill.<br>
+                        You can opt to delay the CC if you have low group DPS. <br>
+                        <span class="colored">Gorseval gains unstrippable retaliation, don't kill yourself.</span>
+                      </dd>
+                      <dt class="mechanics col-sm-3">World Eater</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Gorseval will channel a large AoE that will kill anyone standing in the platform once he finishes channeling the attack.<br>
+                        To counteract this, get him to <b>66%</b> or <b>33%</b> before the channel finishes, or kill a Spectral Wall and use the updraft if you don't have high enough group DPS.</dd>
+                      <dt class="mechanics col-sm-3">Charged Souls</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Charged Souls spawn at <b>66%</b> and <b>33%</b> in each of the four corners of the room (NE, SE, SW, NW).<br>
+                        They will attempt to reach Gorseval and if they do, this results in a wipe. <br>
+                        Slow them with <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Immobile.png"> Immobilize' class="icon" src="assets/Effects/Immobile.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Chilled.png"> Chill' class="icon" src="assets/Effects/Chilled.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Crippled.png"> Cripple' class="icon" src="assets/Effects/Crippled.png">.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Spectral Darkness</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Spectral Darkness are orbs that spawn throughout the room past <b>66%</b>.<br>
+                        They are harmless initially but they will expand out to an AoE if not killed quickly. Anyone that touches this AoE will get a debuff that reduces their outgoing damage and increases their incoming damage.<br><br>
+                        To remove this you must get the 2 gold orbs that spawn after you kill an orb. You want to use ranged DPS to clear Spectral Darkness.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Ghastly Prison</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Ghastly Prisons appear under every player every <span class="text-effect">25 seconds</span> past <b>33%</b>. It is important that you do not get hit by the Ghastly Prison. You have time to dodge out or walk out. If you do end up getting hit by this, you have to use your <b>Special Action Key</b>, or ask your teammates to break your out.<br>
+                        <span class="colored">Getting imprisoned is a major DPS loss.</span>
+                      </dd>
                     </dl>
                   </div>
                 </div>
@@ -417,9 +457,9 @@
         </div>
       </div>
       <hr>
-<!--Sabetha-->
+    <!--Sabetha-->
       <div class="row">
-      <!--Boss Info-->
+      <!--Sabetha Info Panel-->
         <div class="col-lg-4">
           <div class="card bg-light">
             <div class="card-header"><img src="assets/Icons/Boss.png" width="32px" height="32px" class="title-image"><b>Sabetha the Saboteur</b></div>
@@ -442,8 +482,9 @@
             </div>
           </div>
         </div>
-        <!--Group Composition-->
+      <!--Sabetha Main Panel-->
         <div class="col-lg-8">
+        <!--Sabetha Composition-->
           <div class="card bg-light">
             <div class="card-header"><img src="assets/Icons/Composition.png" width="32px" height="32px" class="title-image"><b>Group Composition</b></div>
             <div class="card-body">
@@ -558,6 +599,7 @@
               </div>
             </div>
           </div>
+        <!--Sabetha Mechanics-->
           <div class="card bg-light">
             <div class="card-header">
               <img src="assets/Icons/Mechanics.png" width="32px" height="32px" class="title-image"><b>Mechanics</b>
@@ -568,20 +610,34 @@
                 <div class="element-inner">
                   <div class="element-inner">
                     <dl class="row ">
-                      <dt class="col-sm-3">Time Bomb</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Flak Shot</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Flame Wall</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Charged Souls</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Sapper Bombs</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Cannons</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
-                      <dt class="col-sm-3">Heavy Bombs</dt>
-                      <dd class="col-sm-9 text-muted">Description</dd>
+                      <dt class="mechanics col-sm-3">Time Bomb</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        
+                      </dd>
+                      <dt class="mechanics col-sm-3">Flak Shot</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                      
+                      </dd>
+                      <dt class="mechanics col-sm-3">Flame Wall</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+
+                      </dd>
+                      <dt class="mechanics col-sm-3">Charged Souls</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+
+                      </dd>
+                      <dt class="mechanics col-sm-3">Sapper Bombs</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+
+                      </dd>
+                      <dt class="mechanics col-sm-3">Cannons</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+
+                      </dd>
+                      <dt class="mechanics col-sm-3">Heavy Bombs</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+
+                      </dd>
                     </dl>
                   </div>
                 </div>

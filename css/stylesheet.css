@@ -5700,7 +5700,7 @@ button.close {
   line-break: auto;
   font-size: 0.8203125rem;
   word-wrap: break-word;
-  background-color: #303030;
+  background-color: #000;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
@@ -5742,7 +5742,7 @@ button.close {
 
 .bs-popover-top .arrow::after, .bs-popover-auto[x-placement^="top"] .arrow::after {
   bottom: 1px;
-  border-top-color: #303030;
+  border-top-color: #000;
 }
 
 .bs-popover-right, .bs-popover-auto[x-placement^="right"] {
@@ -5768,7 +5768,7 @@ button.close {
 
 .bs-popover-right .arrow::after, .bs-popover-auto[x-placement^="right"] .arrow::after {
   left: 1px;
-  border-right-color: #303030;
+  border-right-color: #000;
 }
 
 .bs-popover-bottom, .bs-popover-auto[x-placement^="bottom"] {
@@ -5791,7 +5791,7 @@ button.close {
 
 .bs-popover-bottom .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::after {
   top: 1px;
-  border-bottom-color: #303030;
+  border-bottom-color: #000;
 }
 
 .bs-popover-bottom .popover-header::before, .bs-popover-auto[x-placement^="bottom"] .popover-header::before {
@@ -5828,7 +5828,7 @@ button.close {
 
 .bs-popover-left .arrow::after, .bs-popover-auto[x-placement^="left"] .arrow::after {
   right: 1px;
-  border-left-color: #303030;
+  border-left-color: #000;
 }
 
 .popover-header {
@@ -5836,8 +5836,7 @@ button.close {
   margin-bottom: 0;
   font-size: 0.9375rem;
   color: inherit;
-  background-color: #444;
-  border-bottom: 1px solid #373737;
+  background-color: #000;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }

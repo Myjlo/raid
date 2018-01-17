@@ -91,6 +91,9 @@ body {
 .healthbar {
 	margin: 3px 0 0 0;
 }
+.mechanics {
+	margin-top: 10px;
+}
 html {
     cursor: url(../assets/Cursors/Regular.png), auto;
 }
@@ -99,8 +102,38 @@ a, .btn, .card-head {
 	cursor: url(../assets/Cursors/Link.png), auto;
 }
 
-.page-background {
-	background: url(https://i.imgur.com/0KrJWvW.jpg);
+.background-w1 {
+	background: url(../assets/Background/w1.png);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-w2 {
+	background: url(../assets/Background/w2.png);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-w3 {
+	background: url(../assets/Background/w4.png);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-w4 {
+	background: url(../assets/Background/w4.png);
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
