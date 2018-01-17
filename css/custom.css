@@ -43,7 +43,7 @@ body {
 	margin-bottom: 10px;
 }
 .bg-nav {
-	background: #202020;
+	background: #202020 !important;
 }
 
 .element-inner {
