@@ -1,5 +1,8 @@
 body {
     padding-top: 5rem;
+    padding-bottom: 5rem;
+    min-height: 100%;
+    position: relative;
 }
 
 .navbar-custom {
@@ -110,11 +113,12 @@ footer {
     height: 60px;
     line-height: 60px;
     background-color: #202020;
-    position: relative;
+    position: absolute;
 }
 
 html {
     cursor: url(../assets/Cursors/Regular.png), auto;
+    height: 100%;
 }
 
 a, .btn, .card-head {
@@ -160,7 +164,6 @@ a, .btn, .card-head {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 
 
 
