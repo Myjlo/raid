@@ -40,9 +40,9 @@ body {
     margin-right: auto;
 }
 .element-background {
-	border: 1px solid #222;
+	border: 1px solid #090909;
 	border-radius: 0.25rem;
-	background: #222;
+	background: #090909;
 	margin-bottom: 10px;
 }
 .bg-nav {
@@ -107,6 +107,45 @@ body {
 .mechanics {
 	margin-top: 10px;
 }
+
+.gw2a-skills-embed {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.gw2a--17V11 {
+    text-shadow: none !important;
+    font-family: inherit !important;
+}
+
+.gw2a--21oIx {
+    background-color: rgba(0,0,0,0.9) !important;
+    background-image: none !important;
+    border: none !important;
+    border-radius: 0.25rem !important;
+    box-shadow: none !important;
+    padding: 10px !important;
+}
+
+.gw2a--35pJR, .gw2a--3YuRp {
+    color: #fff !important; 
+}
+
+.gw2a--376lb {
+    border: none !important;
+}
+
+.gw2a--10x8O {
+    height: 125px !important;
+}
+
+
+
+
+
+
+
+
 footer {
 	bottom: 0;
     width: 100%;
@@ -187,4 +226,11 @@ a, .btn, .card-head {
 ::-webkit-scrollbar-button:end:increment {
   height: 1px;
   display: block;
+}
+
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5rem;
 }
