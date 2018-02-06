@@ -101,6 +101,10 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
+.text-timer {
+    color: #bbb;
+    text-decoration: underline;
+}
 .healthbar {
 	margin: 3px 0 0 0;
 }
