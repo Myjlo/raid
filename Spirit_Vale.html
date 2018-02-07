@@ -58,6 +58,9 @@
       </div>
     </nav>
   <!--Content-->
+
+
+
     <main role="main" class="container">
       <a class="anchor" id="Top"></a>
     <!--Vale Guardian-->
@@ -260,39 +263,45 @@
                     <dl class="row ">
                       <dt class="mechanics col-sm-3">Distributed Magic</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Green Circles spawn every <span class="text-timer">15 seconds</span> in a random location in the same sector as the boss. You have about <span class="text-timer">5 seconds</span> to get 4 players into them to negate heavy damage. 
+                        Every <span class="text-timer">15 seconds</span> a Green AoE appears in a random location in the same sector as the boss.<br>
+                        You have <span class="text-timer">5 seconds</span> to get 4 players into them to avoid raid-wide heavy damage. 
                       </dd>
                       <dt class="mechanics col-sm-3">Unstable Magic Spike</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Blue Circles spawn every <span class="text-timer">9 seconds</span> within melee range of the Vale Guardian. They last for about <span class="text-timer">2 seconds</span> and then they will explode, dealing damage and teleporting anyone caught in them to a random location. Dodges/evades work against them but you have more than enough time to walk out them.
+                        Every <span class="text-timer">9 seconds</span> Blue AoE's appear within close range of the Vale Guardian. 
+                        You have <span class="text-timer">2 seconds</span> to avoid damage and getting teleported.
                       </dd>
                       <dt class="mechanics col-sm-3">Seekers</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Three Red Seeker orbs spawn every <span class="text-effect">20 seconds</span> in each of the floor segments. Their goal is to move towards the players and deal heavy damage to them.<br>
+                        Every <span class="text-timer">20 seconds</span> 3 Red Orbs appear in each of the floor segments.<br>
+                        Seekers deal heavy damage to players within their range.<br>
                         Slow them with <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Immobile.png"> Immobilize' class="icon" src="assets/Effects/Immobile.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Chilled.png"> Chill' class="icon" src="assets/Effects/Chilled.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Crippled.png"> Cripple' class="icon" src="assets/Effects/Crippled.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Knockback.png"> Knockback' class="icon" src="assets/Effects/Knockback.png">.<br>
                         <span class="colored"><span class="oi oi-warning"></span> Past <b>33%</b> an additional Seeker spawns in the middle of the arena!</span>
                       </dd>
                       <dt class="mechanics col-sm-3">Vale Division</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Vale Guardian will become invulnerable and split up into the 3 Mini-Bosses you've fought before.<br>
-                        You only have a few seconds to get into the right colored section to get the attunement. Once you get this attunement buff, you will receive heavy damage if you are inside the red circle of a different colored guardian unless your guardian has been killed.<br>
-                        <br>
-                        You should have decided pre-fight which members of your raid team are going to each guardian. 
-                        For the Red Guardian you will need at least 2 Condi DPS. The Chronotank should aggro the Green Guardian and move him towards the Blue Guardian, which should meanwhile be getting killed by the rest of the squad. Break the breakbars to kill the guardians.
-                      </dd>
-                      <dt class="mechanics col-sm-3">Bullet Storm</dt>
-                      <dd class="mechanics col-sm-9 text-muted">
-                        During Vale Division, you will see multiple, slow moving, white orbs causing damage. If one of these orbs touches the Blue Guardian, it grants it Blue Pylon Power rendering it invulnerable until it is stripped.
+                        Vale Guardian will become invulnerable and split up into the 3 Mini-Bosses.<br>
+                        Players become attuned to the segment they are standing in, reducing incoming pulsing damage from that boss.<br> 
+                        White Orbs appear throughout the arena. Dealing damage and turning the Blue Guardian invulnerable.<br>
+                        <b class="text-effect">Red Guardian</b><br>
+                        Only vulnerable to conditions.<br>
+                        Spawns 3 Seekers in the arena.<br><br>
+                        <b class="text-effect">Green Guardian</b><br>
+                        Spawns Unstable Magic Spike.<br><br>
+                        <b class="text-effect">Blue Guardian</b><br>
+                        Use boon-removal when Blue Guardian becomes invulnerable.<br>
+                        Spawns Distributed Magic.<br><br>
                       </dd>
                       <dt class="mechanics col-sm-3">Unstable Pylon</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        At <b>66%</b>, one floor segment will light up and deal heavy damage to players standing in them.<br>
-                        This segment rotates every <span class="text-timer">20 seconds</span>. The tank should start the boss at the red segment and then drag him clockwise to the next segment as soon as possible to prevent the green circle from spawning too far behind.<br>
+                        Starting from <b>66%</b> one floor segment will light up and deal heavy damage.<br>
+                        Rotates every <span class="text-timer">20 seconds</span>.<br>
                         <span class="colored"><span class="oi oi-warning"></span> Past <b>33%</b> an additional segment will light up!</span>
                       </dd>
                       <dt class="mechanics col-sm-3">Magic Storm</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Past <b>66%</b>, every <span class="text-timer">30 seconds</span> Vale Guardian will stop moving and gain a breakbar. While this breakbar is active, the boss will constantly spam AoE orbs at the raid. Break this breakbar as soon as it appears or a green circle can spawn too far behind.
+                        Starting from <b>66%</b> every <span class="text-timer">30 seconds</span>.<br>
+                        Vale Guardian gains a breakbar and launch damaging projectiles at players.<br>
                       </dd>
                     </dl>
                   </div>
@@ -495,35 +504,37 @@
                     <dl class="row">
                       <dt class="mechanics col-sm-3">Spectral Impact</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Gorseval will raise his arm up in the air and slam into the ground, knocking people down. This should be evaded or blocked with <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Aegis.png"> Aegis' class="icon" src="assets/Effects/Aegis.png">. 
+                        Gorseval slams into the ground, knocking people down.<br>
+                        This should be evaded or blocked with <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Aegis.png"> Aegis' class="icon" src="assets/Effects/Aegis.png">. 
                       </dd>
                       <dt class="mechanics col-sm-3">Ghastly Rampage</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Gorseval slam the ground repeatedly, creating patterns of black, ghastly material on the floor.<br>
-                        After 3 seconds, the black material deals heavy damage while applying <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Vulnerability.png"> Vulnerability' class="icon" src="assets/Effects/Vulnerability.png">.<br>
+                        Gorseval slams the ground repeatedly, creating patterns of black goop on the floor.<br>
+                        After <span class="text-timer">3 seconds</span>, the goop deals heavy damage and applies <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Vulnerability.png"> Vulnerability' class="icon" src="assets/Effects/Vulnerability.png">.<br>
                         Breaking Gorseval's breakbar interrupts this skill.<br>
                         You can opt to delay the CC if you have low group DPS. <br>
                         <span class="colored"><span class="oi oi-warning"></span> Gorseval gains unstrippable retaliation, don't kill yourself.</span>
                       </dd>
                       <dt class="mechanics col-sm-3">World Eater</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Gorseval will channel a large AoE that will kill anyone standing in the platform once he finishes channeling the attack.<br>
-                        To counteract this, get him to <b>66%</b> or <b>33%</b> before the channel finishes, or kill a Spectral Wall and use the updraft if you don't have high enough group DPS.</dd>
+                        An expanding AoE that will kill anyone standing in the platform once Gorseval finishes channeling the attack.<br>
+                        Get him to <b>66%</b> or <b>33%</b> health before the channel finishes, or kill a Spectral Wall and use the updraft if you don't have high enough group DPS.</dd>
                       <dt class="mechanics col-sm-3">Charged Souls</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Charged Souls spawn at <b>66%</b> and <b>33%</b> in each of the four corners of the room (NE, SE, SW, NW).<br>
-                        They will attempt to reach Gorseval and if they do, this results in a wipe. <br>
+                        At <b>66%</b> and <b>33%</b> health souls spawn in four corners of the room.<br>
+                        If they reach Gorseval.<br>
                         Slow them with <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Immobile.png"> Immobilize' class="icon" src="assets/Effects/Immobile.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Chilled.png"> Chill' class="icon" src="assets/Effects/Chilled.png"><img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Crippled.png"> Cripple' class="icon" src="assets/Effects/Crippled.png">.
                       </dd>
                       <dt class="mechanics col-sm-3">Spectral Darkness</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Spectral Darkness are orbs that spawn throughout the room past <b>66%</b>.<br>
-                        They are harmless initially but they will expand out to an AoE if not killed quickly. Anyone that touches this AoE will get a debuff that reduces their outgoing damage and increases their incoming damage.<br><br>
-                        To remove this you must get the 2 gold orbs that spawn after you kill an orb. You want to use ranged DPS to clear Spectral Darkness.
+                        Starting from <b>66%</b> blue orbs spawn throughout the room.<br>
+                        Touching this AoE will grant players a debuff that reduces their outgoing damage and increases their incoming damage.<br>
+                        Remove this by picking up 2 gold orbs that spawn after you kill a blue orb.
                       </dd>
                       <dt class="mechanics col-sm-3">Ghastly Prison</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Ghastly Prisons appear under every player every <span class="text-effect">25 seconds</span> past <b>33%</b>. It is important that you do not get hit by the Ghastly Prison. You have time to dodge out or walk out. If you do end up getting hit by this, you have to use your <b>Special Action Key</b>, or ask your teammates to break your out.<br>
+                        Starting from <b>33%</b> orange AoE's will appear below players every <span class="text-timer">25 seconds</span>.<br>
+                        You have <span class="text-timer">3 seconds</span> to move out and avoid getting imprisoned.<br>
                         <span class="colored"><span class="oi oi-warning"></span> Getting imprisoned is a major DPS loss.</span>
                       </dd>
                     </dl>
@@ -734,24 +745,23 @@
                     <dl class="row ">
                       <dt class="mechanics col-sm-3">Platform Integrity</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        In addition to the enrage timer, the platform also has a healthbar.<br>
-                        The platform is slowly damaged as the fight progresses from cannon fire, and can be heavily damaged by Heavy Bombs exploding. If the bar reaches zero, this results in a wipe.
+                        In addition to the enrage timer, the platform has a healthbar.<br>
                       </dd>
                       <dt class="mechanics col-sm-3">Time Bomb</dt>
                       <dd class="mechanics col-sm-9 text-muted">
                         The closest player to Sabetha will be targeted and explode after <span class="text-timer">3 seconds</span>.<br>
-                        The explosion will do heavy damage to players and instantly kill any downed players caught in it.<br>
+                        Time Bomb does heavy damage and instantly kill any downed players within range.<br>
                         <span class="colored"><span class="oi oi-warning"></span> After 50% an additional Time Bomb will spawn!</span>
                       </dd>
                       <dt class="mechanics col-sm-3">Flak Shot</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Every <span class="text-effect">7 seconds</span> Sabetha will fire slow moving projectiles at the player furthest away from her.<br>
-                        Once it lands it will put down several AoE's that apply <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Burning.png"> Burning' class="icon" src="assets/Effects/Burning.png">.
+                        Every <span class="text-timer">7 seconds</span> Sabetha will fire projectiles at the furthest player away from her.<br>
+                        Creates AoE's when it lands that apply <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Burning.png"> Burning' class="icon" src="assets/Effects/Burning.png">.
                       </dd>
                       <dt class="mechanics col-sm-3">Flame Wall</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        A Flame Wall will spawn roughly every <span class="text-effect">45 seconds</span>, and when Sabetha returns to the platform.<br>
-                        She will target a random player and rotates around the entire arena counter-clockwise. Any player it touches is instantly killed.
+                        Every <span class="text-timer">45 seconds</span> (and when Sabetha returns to the platform), a Flame Wall spawns. <br>
+                        The Flame Wall rotates around counter-clockwise, killing every player it touches.
                       </dd>
                       <dt class="mechanics col-sm-3">Sapper Bombs</dt>
                       <dd class="mechanics col-sm-9 text-muted">
@@ -762,14 +772,23 @@
                       </dd>
                       <dt class="mechanics col-sm-3">Cannons</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Cannons will spawn around the arena every <span class="text-timer">30 seconds</span> in order: SWNE SNWE.<br>
+                        Every <span class="text-timer">30 seconds</span> a cannon will activate around the platform in order: SWNE SNWE.<br>
                         You must have at least 2 players assigned to cannons, each taking one in turn.<br>
                         They will get a debuff that prevents them from being launched for <span class="text-timer">50 seconds</span>.<br>
                         <br>
                         Cannons will cover a sector of the platform with AoEs and cause damage to the platforms if not killed quickly. 
                       </dd>
+                      <dt class="mechanics col-sm-3">Cannons</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        <br>
+                        <b class="text-effect">Sapper Bombs</b><br>
+                        <br><br>
+                        <b class="text-effect">Cannons</b><br>
+
                       <dt class="mechanics col-sm-3">Champions</dt>
                       <dd class="mechanics col-sm-9 text-muted">
+                        Sabetha teleports away until a Champion reaches <b>25%</b> health.<br>
+                        Heavy Bombs appear periodically on the platform, interact to remove them.<br><br>
                         <b class="text-effect">Kernan</b><br>
                         Spawns at <b>75%</b>.<br>
                         Dodge the 2nd & 3rd shot of his AoE, these can otherwise down you.<br>
@@ -783,12 +802,6 @@
                         Don't stand in his flamethrower attack.<br>
                         Cleave Karde's Turrets.<br>
                         Kick Heavy Bombs.<br><br>
-                      </dd>
-                      <dt class="mechanics col-sm-3">Heavy Bombs</dt>
-                      <dd class="mechanics col-sm-9 text-muted">
-                        While you are fighting Kernan, Knuckles or Karde, Heavy Bombs will appear on the platform.<br>
-                        These bombs need to be dealt with otherwise the platform will die.<br>
-                        Simply run up to them and interact to kick them off.
                       </dd>
                     </dl>
                   </div>
