@@ -33,8 +33,8 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item active" href="Spirit_Vale.html">Spirit Vale</a>
-              <a class="dropdown-item" href="Salvation_Pass.html">Salvation Pass</a>
-              <a class="dropdown-item" href="Stronghold_of_the_Faithful.html">Stronghold of the Faithful</a>
+              <a class="dropdown-item disabled" href="Salvation_Pass.html">Salvation Pass</a>
+              <a class="dropdown-item disabled" href="Stronghold_of_the_Faithful.html">Stronghold of the Faithful</a>
               <a class="dropdown-item disabled" href="Bastion_of_the_Penitent.html">Bastion of the Penitent</a>
               <a class="dropdown-item disabled" href="Hall_of_Chains.html">Hall of Chains</a>
               <div class="dropdown-divider"></div>
@@ -58,11 +58,12 @@
       </div>
     </nav>
   <!--Content-->
-
-
-
     <main role="main" class="container">
       <a class="anchor" id="Top"></a>
+    <!-- Outdated Alert-->
+      <div class="alert alert-dark fade show" role="alert">
+        <b class="text-warning"><span class="oi oi-warning"></span> Due to recent balance changes, compositions and recommended classes may not be accurate!</b>
+      </div>
     <!--Vale Guardian-->
       <a class="anchor" id="Vale_Guardian"></a>
       <div class="row">
@@ -763,45 +764,26 @@
                         Every <span class="text-timer">45 seconds</span> (and when Sabetha returns to the platform), a Flame Wall spawns. <br>
                         The Flame Wall rotates around counter-clockwise, killing every player it touches.
                       </dd>
-                      <dt class="mechanics col-sm-3">Sapper Bombs</dt>
-                      <dd class="mechanics col-sm-9 text-muted">
-                        Green bombs are regularly placed on players by Bandit Sappers.<br>
-                        If you have a Sapper Bomb, you have <span class="text-timer">5 seconds</span> to use it before it times out.<br>
-                        You should throw them at a player on the launchpad in the same direction as the Cannon that is currently firing, so they get launched up to the Cannon and can destroy it.<br>
-                        <span class="colored"><span class="oi oi-warning"></span> Bind the 'Special Action Key' to something easy to use!</span>
-                      </dd>
                       <dt class="mechanics col-sm-3">Cannons</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Every <span class="text-timer">30 seconds</span> a cannon will activate around the platform in order: SWNE SNWE.<br>
-                        You must have at least 2 players assigned to cannons, each taking one in turn.<br>
-                        They will get a debuff that prevents them from being launched for <span class="text-timer">50 seconds</span>.<br>
-                        <br>
-                        Cannons will cover a sector of the platform with AoEs and cause damage to the platforms if not killed quickly. 
-                      </dd>
-                      <dt class="mechanics col-sm-3">Cannons</dt>
-                      <dd class="mechanics col-sm-9 text-muted">
-                        <br>
-                        <b class="text-effect">Sapper Bombs</b><br>
-                        <br><br>
                         <b class="text-effect">Cannons</b><br>
-
+                        Every <span class="text-timer">30 seconds</span> a cannon will activate in order: SWNE SNWE.<br><br>
+                        <b class="text-effect">Sapper Bombs</b><br>
+                        A Green AoE, applied to a players by Bandit Sappers
+                        You got <span class="text-timer">5 seconds</span> to throw on a launchpad so it launches a player up to a cannon.<br>
+                        <span class="colored"><span class="oi oi-warning"></span> Bind the 'Special Action Key' to something easy to use!</span><br><br>
+                      </dd>
                       <dt class="mechanics col-sm-3">Champions</dt>
                       <dd class="mechanics col-sm-9 text-muted">
                         Sabetha teleports away until a Champion reaches <b>25%</b> health.<br>
                         Heavy Bombs appear periodically on the platform, interact to remove them.<br><br>
-                        <b class="text-effect">Kernan</b><br>
-                        Spawns at <b>75%</b>.<br>
-                        Dodge the 2nd & 3rd shot of his AoE, these can otherwise down you.<br>
-                        Kick Heavy Bombs.<br><br>
-                        <b class="text-effect">"Knuckles"</b><br>
-                        Spawns at <b>50%</b>.<br>
-                        Break his breakbar when it pops up.<br>
-                        Kick Heavy Bombs.<br><br>
-                        <b class="text-effect">Karde</b><br>
-                        Spawns at <b>25%</b>.<br>
+                        <b class="text-effect">Kernan</b> - <b>75%</b><br>
+                        Dodge the 2nd & 3rd shot of his AoE, these can otherwise down you.<br><br>
+                        <b class="text-effect">Knuckles</b> - <b>50%</b><br>
+                        Break his breakbar when it pops up.<br><br>
+                        <b class="text-effect">Karde</b> - <b>25%</b><br>
                         Don't stand in his flamethrower attack.<br>
-                        Cleave Karde's Turrets.<br>
-                        Kick Heavy Bombs.<br><br>
+                        Cleave Karde's Turrets.<br><br>
                       </dd>
                     </dl>
                   </div>

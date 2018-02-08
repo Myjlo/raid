@@ -18,7 +18,7 @@ body {
 	margin-bottom: 30px;
 }
 .icon {
-	margin-left: 2px;
+	margin: 0 0 2px 2px;
 	width: 20px;
 	height: 20px;
 }
@@ -71,11 +71,11 @@ body {
 }
 
 .necromancer {
-	color: #52A76F;
+	color: #41a664;
 }
 
 .ranger {
-	color: #8CDC82;
+	color: #8bda5b;
 }
 
 .thief {
@@ -83,7 +83,7 @@ body {
 }
 
 .engineer {
-	color: #D09C59;
+	color: #a86931;
 }
 
 .warrior {
@@ -91,11 +91,11 @@ body {
 }
 
 .guardian {
-	color: #72C1D9;
+	color: #58bddc;
 }
 
 .revenant {
-	color: #D16E5A;
+	color: #d8543a;
 }
 .text-effect {
 	color: #fff;
