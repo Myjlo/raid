@@ -103,7 +103,7 @@ body {
 }
 .text-timer {
     color: #bbb;
-    text-decoration: underline;
+    font-weight: bold;
 }
 .healthbar {
 	margin: 3px 0 0 0;

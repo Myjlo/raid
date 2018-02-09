@@ -235,6 +235,9 @@ textarea {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
+img:focus {
+  outline: none !important;
+}
 
 table {
   border-collapse: collapse;
@@ -5699,6 +5702,7 @@ button.close {
   line-break: auto;
   font-size: 0.8203125rem;
   word-wrap: break-word;
+  opacity: 0.9 !important;
   background-color: #000;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -5836,6 +5840,7 @@ button.close {
   font-size: 0.9375rem;
   color: inherit;
   background-color: #000;
+    opacity: 0.9 !important;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }

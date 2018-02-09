@@ -57,8 +57,72 @@
           <div class="card bg-light">
             <div class="card-header"><b>Welcome</b></div>
             <div class="card-body">
-              Nothing here yet.
-                <img src="http://www.stickpng.com/assets/images/5845cd230b2a3b54fdbaecf7.png" width="100%" height="100%">
+              <a class="tooltip-Aegis"></a>
+              <a class="tooltip-Alacrity"></a>
+              <a class="tooltip-Fury"></a>
+              <a class="tooltip-Might"></a>
+              <a class="tooltip-Protection"></a>
+              <a class="tooltip-Quickness"></a>
+              <a class="tooltip-Regeneration"></a>
+              <a class="tooltip-Resistance"></a>
+              <a class="tooltip-Retaliation"></a>
+              <a class="tooltip-Stability"></a>
+              <a class="tooltip-Swiftness"></a>
+              <a class="tooltip-Vigor"></a>
+              <br>
+              <a class="tooltip-Daze"></a>
+              <a class="tooltip-Stun"></a>
+              <a class="tooltip-Knockdown"></a>
+              <a class="tooltip-Knockback"></a>
+              <a class="tooltip-Pull"></a>
+              <a class="tooltip-Launch"></a>
+              <a class="tooltip-Float"></a>
+              <a class="tooltip-Sink"></a>
+              <a class="tooltip-Invulnerability"></a>
+              <a class="tooltip-Stealth"></a>
+              <a class="tooltip-Revealed"></a>
+              <br>
+              <a class="tooltip-Bleeding"></a>
+              <a class="tooltip-Burning"></a>
+              <a class="tooltip-Confusion"></a>
+              <a class="tooltip-Poison"></a>
+              <a class="tooltip-Torment"></a>
+              <a class="tooltip-Blind"></a>
+              <a class="tooltip-Chilled"></a>
+              <a class="tooltip-Crippled"></a>
+              <a class="tooltip-Fear"></a>
+              <a class="tooltip-Immobile"></a>
+              <a class="tooltip-Slow"></a>
+              <a class="tooltip-Taunt"></a>
+              <a class="tooltip-Weakness"></a>
+              <a class="tooltip-Vulnerability"></a>
+              <br>
+              <a class="tooltip-Spotter"></a>
+              <a class="tooltip-FrostSpirit"></a>
+              <a class="tooltip-SunSpirit"></a>
+              <a class="tooltip-StoneSpirit"></a>
+              <a class="tooltip-StormSpirit"></a>
+
+              <a class="tooltip-EmpowerAllies"></a>
+              <a class="tooltip-BannerOfStrength"></a>
+              <a class="tooltip-BannerOfDiscipline"></a>
+
+              <a class="tooltip-AssassinsPresence"></a>
+              <a class="tooltip-PinpointDistribution"></a>
+              <a class="tooltip-VampiricPresence"></a>
+              <a class="tooltip-StrengthInNumbers"></a>
+<br>
+              <img
+                tabindex="0"
+                src="assets/Icons/Druid.png"
+                class="icon"
+                data-html="true" 
+                data-toggle="popover" 
+                data-trigger="hover focus"
+                data-placement="top" 
+                title="<b>Druid</b> - Healer" 
+                data-content='Skills<br><img class="icon" src="assets/Effects/GlyphofRejuvenation.png"/><img class="icon" src="assets/Effects/SunSpirit.png"/><img class="icon" src="assets/Effects/FrostSpirit.png"/><img class="icon" src="assets/Effects/StormSpirit.png"/><img class="icon" src="assets/Effects/GlyphofUnity.png"/>'>
+              </a>
             </div>
           </div>
         </div>
@@ -76,12 +140,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script async src="https://unpkg.com/armory-embeds@^0.x.x/armory-embeds.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/tooltips.js"></script>
 
     <script type='text/javascript'>
       var scroll = new SmoothScroll('a[data-scroll]');
       $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
       })
+
     </script>
   </body>
 </html>

@@ -34,7 +34,7 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="Spirit_Vale.html">Spirit Vale</a>
               <a class="dropdown-item active" href="Salvation_Pass.html">Salvation Pass</a>
-              <a class="dropdown-item" href="Stronghold_of_the_Faithful.html">Stronghold of the Faithful</a>
+              <a class="dropdown-item disabled" href="Stronghold_of_the_Faithful.html">Stronghold of the Faithful</a>
               <a class="dropdown-item disabled" href="Bastion_of_the_Penitent.html">Bastion of the Penitent</a>
               <a class="dropdown-item disabled" href="Hall_of_Chains.html">Hall of Chains</a>
               <div class="dropdown-divider"></div>
@@ -127,7 +127,6 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-sloth-roles-tab" data-toggle="tab" href="#nav-sloth-roles" role="tab" aria-controls="nav-sloth-roles" aria-selected="true">Composition</a>
                   <a class="nav-item nav-link" id="nav-sloth-dps-tab" data-toggle="tab" href="#nav-sloth-dps" role="tab" aria-controls="nav-sloth-dps" aria-selected="false">DPS Classes</a>
-                  <a class="nav-item nav-link" id="nav-sloth-skills-tab" data-toggle="tab" href="#nav-sloth-skills" role="tab" aria-controls="nav-sloth-skills" aria-selected="false">Skills</a>
                 </div>
               </nav>
               <div class="tab-content element-background" id="nav-tabContent">
@@ -141,10 +140,10 @@
                           Slubling management with pulls.<br>
                           Distorting Spore Release.<br>
                           Provides: 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Quickness.png"> Quickness' class="icon" src="assets/Effects/Quickness.png">
-                        <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Aegis.png"> Aegis' class="icon" src="assets/Effects/Aegis.png">
-                        <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Regeneration.png"> Regeneration' class="icon" src="assets/Effects/Regeneration.png">
-                        <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Alacrity.png"> Alacrity' class="icon" src="assets/Effects/Alacrity.png">
+                          <a class="tooltip-Quickness"></a>
+                          <a class="tooltip-Aegis"></a>
+                          <a class="tooltip-Regeneration"></a>
+                          <a class="tooltip-Alacrity"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
@@ -153,18 +152,17 @@
                           Heals & Buffs Allies.<br>
                           Breaks stun after Hibernation.<br>
                           Provides: 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Might.png"> Might' class="icon" src="assets/Effects/Might.png"> 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Fury.png"> Fury' class="icon" src="assets/Effects/Fury.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Vigor.png"> Vigor' class="icon" src="assets/Effects/Vigor.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Swiftness.png"> Swiftness' class="icon" src="assets/Effects/Swiftness.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Regeneration.png"> Regeneration' class="icon" src="assets/Effects/Regeneration.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Protection.png"> Protection' class="icon" src="assets/Effects/Protection.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Stability.png"> Stability' class="icon" src="assets/Effects/Stability.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Spotter.png"> Spotter' class="icon" src="assets/Effects/Spotter.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Sun_Spirit.png"> Sun Spirit' class="icon" src="assets/Effects/Sun_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Frost_Spirit.png"> Frost Spirit' class="icon" src="assets/Effects/Frost_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Storm_Spirit.png"> Storm Spirit' class="icon" src="assets/Effects/Storm_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Stone_Spirit.png"> Stone Spirit' class="icon" src="assets/Effects/Stone_Spirit.png">
+                          <a class="tooltip-Might"></a>
+                        <a class="tooltip-Fury"></a>
+                        <a class="tooltip-Swiftness"></a>
+                        <a class="tooltip-Regeneration"></a>
+                        <a class="tooltip-Protection"></a>
+                        <a class="tooltip-Vigor"></a>
+                        <a class="tooltip-Spotter"></a>
+                        <a class="tooltip-FrostSpirit"></a>
+                        <a class="tooltip-SunSpirit"></a>
+                        <a class="tooltip-StormSpirit"></a>
+                        <a class="tooltip-StoneSpirit"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
@@ -172,9 +170,9 @@
                         <span>
                           Buffs Allies.<br>
                           Provides:
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Empower_Allies.png"> Empower Allies' class="icon" src="assets/Effects/Empower_Allies.png"> 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Banner_of_Discipline.png"> Banner of Discipline' class="icon" src="assets/Effects/Banner_of_Discipline.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Banner_of_Strength.png"> Banner of Strength' class="icon" src="assets/Effects/Banner_of_Strength.png">
+                          <a class="tooltip-EmpowerAllies"></a>
+                          <a class="tooltip-BannerOfDiscipline"></a>
+                          <a class="tooltip-BannerOfStrength"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Any.png">Everyone</dt>
@@ -217,29 +215,6 @@
                   </table>
                   </table>
                 </div>
-                 <div class="tab-pane fade element-inner" id="nav-sloth-skills" role="tabpanel" aria-labelledby="nav-sloth-skills-tab">
-                  <div class="element-inner">
-                    <dl class="row ">
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Chronomancer.png"><span class="mesmer">Chronomancer</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="30305,10236,30814,29856,29519" data-armory-size="40"></span><br>
-                        <b class="mesmer">Specializations:</b> Illusions, Inspiration & Chronomancer<br>
-                      </dd>
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="12489,12631,12493,12497,12569" data-armory-size="40"></span><br>  
-                        <span data-armory-embed="skills" data-armory-ids="12489,12631,12495,12498,12569" data-armory-size="40"></span><br>
-                        <b class="ranger">Specializations:</b> Nature Magic, Skirmishing & Druid<br>
-                        <b class="ranger">Pets:</b> Electric Wyvern & Tiger/Black Moa/Gazelle
-                      </dd>
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="30189,30074,14407,14405,30343" data-armory-size="40"></span><br>
-                        <b class="warrior">Specializations:</b> Tactics, Arms, Berserker<br>
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -261,7 +236,8 @@
                       </dd>
                       <dt class="mechanics col-sm-3">Aggro</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Slothasor will aggro on the Fixated player.
+                        Slothasor will aggro on the player affected by Fixation.<br>
+                        See mechanics below for more detail.
                       </dd>
                     </dl>
                   </div>
@@ -274,23 +250,77 @@
                     <dl class="row ">
                       <dt class="mechanics col-sm-3">Fixation</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Description
+                        Every <span class="text-timer">30 seconds</span>.<br>
+                        A random player gets Fixated and functions as "tank".<br>
+                        Fixation will also change when that player either downs or eats an Imbued Mushroom.<br>
                       </dd>
                       <dt class="mechanics col-sm-3">Imbued Mushrooms</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Description
+                        Every <span class="text-timer">50 seconds</span>.<br>
+
+                        <br>!!To be added!!<br><br>
+
                       </dd>
                       <dt class="mechanics col-sm-3">Tantrum</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Description
+                        A series of Orange AoE's appear under each player.<br>
+                        Deals heavy damage and applies <a class="tooltip-Knockdown"></a><br>
+                        Keep movement to a minimum, once you see 3 AoE's underneath you, dodge.
                       </dd>
                       <dt class="mechanics col-sm-3">Volatile Poison</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Description
+                        Every <span class="text-timer">25 seconds</span> starting at <span class="text-timer">6:35</span>.<br>
+                        A random player becomes affected with Volatile Poison, which when dropped will create an expanding heavily damaging AoE.<br>
+                        Volatile Poison can be dropped with the Special Action Key or automatically after <span class="text-timer">8 seconds</span>.<br>
+                        <span class="colored"><span class="oi oi-warning"></span> Volatile Poison drops when you go down or eat an Imbued Mushroom!</span><br>
+                        <span class="colored"><span class="oi oi-warning"></span> Bind the 'Special Action Key' to something easy to use!</span>
                       </dd>
                       <dt class="mechanics col-sm-3">Halitosis</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Description
+                        Roughly every <span class="text-timer">15 seconds</span>.<br>
+                        Slothasor breathes fire forwards, dealing heavy damage and applying <a class="tooltip-Burning"></a><br>
+                        Stand behind Slothasor to avoid.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Slublings</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Every <span class="text-timer">30 seconds</span>.<br>
+                        Slublings spawn and will attack players.<br>
+                        <b class="text-effect">Slublings</b><br>
+                        Spawns starting from <span class="text-timer">100%</span> health.<br>
+                        Uses projectiles that corrupt boons.<br>
+                        Applies
+                        <a class="tooltip-Poison"></a>
+                        <a class="tooltip-Burning"></a>
+                        <a class="tooltip-Torment"></a>
+                        <a class="tooltip-Bleeding"></a>
+                        <a class="tooltip-Slow"></a>
+                        <a class="tooltip-Vulnerability"></a>
+                        <a class="tooltip-Crippled"></a><br>
+                        <b class="text-effect">Evolved Slublings</b><br>
+                        Spawns starting from <span class="text-timer">30%</span> health.<br>
+                        Similar to their regular counterparts, except:<br>
+                        <ul>
+                          <li>Higher amount of health.</li>
+                          <li>Projectiles can not be reflected or destroyed.</li>
+                        </ul>
+                      </dd>
+                      <dt class="mechanics col-sm-3">Hibernation</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Every <span class="text-timer">20%</span> and at <span class="text-timer">10%</span> health.<br>
+                        Slothasor falls asleep, becomes immune to damage and gains a breakbar.<br>
+                        Break the bar to continue.<br>
+                        Applies <a class="tooltip-Fear"></a> when broken.
+                      </dd>
+                      <dt class="mechanics col-sm-3">Spore Release</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        Every <span class="text-timer">45 seconds</span> starting from <span class="text-timer">50%</span> health.<br>
+                        Slothasor starts shaking and releases spores that deal heavy damage and apply 
+                          <a class="tooltip-Poison"></a>
+                          <a class="tooltip-Burning"></a>
+                          <a class="tooltip-Torment"></a>
+                          <a class="tooltip-Vulnerability"></a><br>
+                        Double-dodge in Slothasors hitbox to avoid most if not all spores.<br>
+                        <span class="colored"><span class="oi oi-warning"></span> You can use invulnerability and jump inside Slothasors hitbox to absorb most if not all spores.</span>
                       </dd>
                     </dl>
                   </div>
@@ -363,7 +393,6 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-bandit_trio-roles-tab" data-toggle="tab" href="#nav-bandit_trio-roles" role="tab" aria-controls="nav-bandit_trio-roles" aria-selected="true">Composition</a>
                   <a class="nav-item nav-link" id="nav-bandit_trio-dps-tab" data-toggle="tab" href="#nav-bandit_trio-dps" role="tab" aria-controls="nav-bandit_trio-dps" aria-selected="false">DPS Classes</a>
-                  <a class="nav-item nav-link" id="nav-bandit_trio-skills-tab" data-toggle="tab" href="#nav-bandit_trio-skills" role="tab" aria-controls="nav-bandit_trio-skills" aria-selected="false">Skills</a>
                 </div>
               </nav>
               <div class="tab-content element-background" id="nav-tabContent">
@@ -375,10 +404,10 @@
                         <span>
                           Shares Boons.<br>
                           Provides: 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Quickness.png"> Quickness' class="icon" src="assets/Effects/Quickness.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Aegis.png"> Aegis' class="icon" src="assets/Effects/Aegis.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Regeneration.png"> Regeneration' class="icon" src="assets/Effects/Regeneration.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Alacrity.png"> Alacrity' class="icon" src="assets/Effects/Alacrity.png">
+                          <a class="tooltip-Quickness"></a>
+                          <a class="tooltip-Aegis"></a>
+                          <a class="tooltip-Regeneration"></a>
+                          <a class="tooltip-Alacrity"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
@@ -386,15 +415,16 @@
                        <span>
                           Heals & Buffs Allies.<br>
                           Provides: 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Might.png"> Might' class="icon" src="assets/Effects/Might.png"> 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Fury.png"> Fury' class="icon" src="assets/Effects/Fury.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Vigor.png"> Vigor' class="icon" src="assets/Effects/Vigor.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Swiftness.png"> Swiftness' class="icon" src="assets/Effects/Swiftness.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Regeneration.png"> Regeneration' class="icon" src="assets/Effects/Regeneration.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Spotter.png"> Spotter' class="icon" src="assets/Effects/Spotter.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Sun_Spirit.png"> Sun Spirit' class="icon" src="assets/Effects/Sun_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Frost_Spirit.png"> Frost Spirit' class="icon" src="assets/Effects/Frost_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Storm_Spirit.png"> Storm Spirit' class="icon" src="assets/Effects/Storm_Spirit.png">
+                          <a class="tooltip-Might"></a>
+                          <a class="tooltip-Fury"></a>
+                          <a class="tooltip-Swiftness"></a>
+                          <a class="tooltip-Regeneration"></a>
+                          <a class="tooltip-Protection"></a>
+                          <a class="tooltip-Vigor"></a>
+                          <a class="tooltip-Spotter"></a>
+                          <a class="tooltip-FrostSpirit"></a>
+                          <a class="tooltip-SunSpirit"></a>
+                          <a class="tooltip-StormSpirit"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
@@ -403,9 +433,9 @@
                           Buffs Allies.<br>
                           Saboteur Duty.<br>
                           Provides:
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Empower_Allies.png"> Empower Allies' class="icon" src="assets/Effects/Empower_Allies.png"> 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Banner_of_Discipline.png"> Banner of Discipline' class="icon" src="assets/Effects/Banner_of_Discipline.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Banner_of_Strength.png"> Banner of Strength' class="icon" src="assets/Effects/Banner_of_Strength.png">
+                          <a class="tooltip-EmpowerAllies"></a>
+                          <a class="tooltip-BannerOfDiscipline"></a>
+                          <a class="tooltip-BannerOfStrength"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Any.png">Everyone</dt>
@@ -447,30 +477,6 @@
                   </table>
                   </table>
                 </div>
-                 <div class="tab-pane fade element-inner" id="nav-bandit_trio-skills" role="tabpanel" aria-labelledby="nav-bandit_trio-skills-tab">
-                  <div class="element-inner">
-                    <dl class="row ">
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Chronomancer.png"><span class="mesmer">Chronomancer</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="30305,10236,30814,29856,30359" data-armory-size="40"></span><br>
-                        <span data-armory-embed="skills" data-armory-ids="30305,10236,30814,29856,10377" data-armory-size="40"></span><br>
-                        <b class="mesmer">Specializations:</b> Inspiration, Domination & Chronomancer<br>
-                      </dd>
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="31819,31804,12493,12497,31677" data-armory-size="40"></span><br>  
-                        <span data-armory-embed="skills" data-armory-ids="31819,31804,31607,12498,31677" data-armory-size="40"></span><br>
-                        <b class="ranger">Specializations:</b> Nature Magic, Skirmishing & Druid<br>
-                        <b class="ranger">Pets:</b> Electric Wyvern & Tiger/Black Moa/Gazelle
-                      </dd>
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="30189,30074,14407,14405,30343" data-armory-size="40"></span><br>
-                        <b class="warrior">Specializations:</b> Tactics, Arms, Berserker<br>
-                      </dd>
-                    </dl>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -505,7 +511,9 @@
                     <dl class="row ">
                       <dt class="mechanics col-sm-3">Prisoner Cage</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Description
+                        The primary objective of this encounter.<br>
+                        Kill enemies and prevent them from damaging the cage.<br>
+                        Results in a wipe if the Cage reaches 0% health.
                       </dd>
                       <dt class="mechanics col-sm-3">Snipers</dt>
                       <dd class="mechanics col-sm-9 text-muted">
@@ -523,22 +531,34 @@
                       <dd class="mechanics col-sm-9 text-muted">
                         <b class="text-effect">Berg</b><br>
                         Spawns at <span class="text-timer">6:55</span>.<br>
-                        Throw beehives to increase damage on Berg.<br>
-                        Break his breakbar for easier skill rotations.<br><br>
+                        Throw a beehive to increase damage on Berg (effect doesn't stack).<br>
+                        Break his breakbar for easier skill rotations.<br>
                         <b class="text-effect">Zane</b><br>
                         Spawns at <span class="text-timer">4:55</span>.<br>
                         Unleash Caged Wargs to increase damage on Zane.<br>
-                        Always stand between Zane and the exterior camp wall to prevent him from damaging the Prisoner Cage.<br><br>
+                        <span class="colored"><span class="oi oi-warning"></span>Stand between Zane and the wall so he doesn't damage the Cage.</span><br>
                         <b class="text-effect">Narella</b><br>
                         Spawns at <span class="text-timer">2:55</span>.<br>
                         Throw and ignite Oil Kegs to increase DPS on Narella.<br>
-                        Avoid Fiery Tornado's and Flak Shot.<br><br>
+                        Avoid Fiery Tornado's and Flak Shot.<br>
                       </dd>
                       <dt class="mechanics col-sm-3">Environmental Weapons</dt>
                       <dd class="mechanics col-sm-9 text-muted">
                         <b class="text-effect">Beehives</b><br>
+                        Hanging on Branches throughout the  Camp.<br>
+                        Damage them so they drop and stack them at the east gate.<br>
+                        Deals damage and applies
+                        <a class="tooltip-Crippled"></a><br>
+                        Can also be used to negate Bandit Saboteurs while fighting Narella.<br>
                         <b class="text-effect">Caged Wargs</b><br>
+                        6 Wargs are located in the southern part of the Camp, 2 at the northen part.<br>
+                        Interact to release the Wargs.<br>
+                        Can also be used while fighting Narella.<br>
                         <b class="text-effect">Oil Kegs</b><br>
+                        5 Oil Kegs are scattered throughout the Camp.<br>
+                        Stack the Oil Kegs on the ledge near the Northern Gate.<br>
+                        Throw them onto Narella and use 
+                        <a class="tooltip-Burning"></a> to ignite for additional damage.<br> 
                       </dd>
                     </dl>
                   </div>
@@ -612,7 +632,6 @@
                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <a class="nav-item nav-link active" id="nav-matthias-roles-tab" data-toggle="tab" href="#nav-matthias-roles" role="tab" aria-controls="nav-matthias-roles" aria-selected="true">Composition</a>
                   <a class="nav-item nav-link" id="nav-matthias-dps-tab" data-toggle="tab" href="#nav-matthias-dps" role="tab" aria-controls="nav-matthias-dps" aria-selected="false">DPS Classes</a>
-                  <a class="nav-item nav-link" id="nav-matthias-skills-tab" data-toggle="tab" href="#nav-matthias-skills" role="tab" aria-controls="nav-matthias-skills" aria-selected="false">Skills</a>
                 </div>
               </nav>
               <div class="tab-content element-background" id="nav-tabContent">
@@ -625,10 +644,10 @@
                           Shares Boons.<br>
                           Reflects Blood Shards.<br>
                           Provides: 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Quickness.png"> Quickness' class="icon" src="assets/Effects/Quickness.png">
-                        <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Aegis.png"> Aegis' class="icon" src="assets/Effects/Aegis.png">
-                        <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Regeneration.png"> Regeneration' class="icon" src="assets/Effects/Regeneration.png">
-                        <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Alacrity.png"> Alacrity' class="icon" src="assets/Effects/Alacrity.png">
+                          <a class="tooltip-Quickness"></a>
+                          <a class="tooltip-Aegis"></a>
+                          <a class="tooltip-Regeneration"></a>
+                          <a class="tooltip-Alacrity"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
@@ -637,18 +656,17 @@
                           Heals & Buffs Allies.<br>
                           Absorbs Vault.<br>
                           Provides: 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Might.png"> Might' class="icon" src="assets/Effects/Might.png"> 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Fury.png"> Fury' class="icon" src="assets/Effects/Fury.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Vigor.png"> Vigor' class="icon" src="assets/Effects/Vigor.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Swiftness.png"> Swiftness' class="icon" src="assets/Effects/Swiftness.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Regeneration.png"> Regeneration' class="icon" src="assets/Effects/Regeneration.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Protection.png"> Protection' class="icon" src="assets/Effects/Protection.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Stability.png"> Stability' class="icon" src="assets/Effects/Stability.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Spotter.png"> Spotter' class="icon" src="assets/Effects/Spotter.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Sun_Spirit.png"> Sun Spirit' class="icon" src="assets/Effects/Sun_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Frost_Spirit.png"> Frost Spirit' class="icon" src="assets/Effects/Frost_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Storm_Spirit.png"> Storm Spirit' class="icon" src="assets/Effects/Storm_Spirit.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Stone_Spirit.png"> Stone Spirit' class="icon" src="assets/Effects/Stone_Spirit.png">
+                          <a class="tooltip-Might"></a>
+                          <a class="tooltip-Fury"></a>
+                          <a class="tooltip-Swiftness"></a>
+                          <a class="tooltip-Regeneration"></a>
+                          <a class="tooltip-Protection"></a>
+                          <a class="tooltip-Vigor"></a>
+                          <a class="tooltip-Spotter"></a>
+                          <a class="tooltip-FrostSpirit"></a>
+                          <a class="tooltip-SunSpirit"></a>
+                          <a class="tooltip-StoneSpirit"></a>
+                          <a class="tooltip-StormSpirit"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
@@ -656,9 +674,9 @@
                         <span>
                           Buffs Allies.<br>
                           Provides:
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Empower_Allies.png"> Empower Allies' class="icon" src="assets/Effects/Empower_Allies.png"> 
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Banner_of_Discipline.png"> Banner of Discipline' class="icon" src="assets/Effects/Banner_of_Discipline.png">
-                          <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Banner_of_Strength.png"> Banner of Strength' class="icon" src="assets/Effects/Banner_of_Strength.png">
+                          <a class="tooltip-EmpowerAllies"></a>
+                          <a class="tooltip-BannerOfDiscipline"></a>
+                          <a class="tooltip-BannerOfStrength"></a>
                         </span>
                       </dd>
                       <dt class="col-sm-3"><img class="icon" src="assets/Icons/Any.png">Everyone</dt>
@@ -697,29 +715,6 @@
                     </tbody>
                   </table>
                   </table>
-                </div>
-                 <div class="tab-pane fade element-inner" id="nav-matthias-skills" role="tabpanel" aria-labelledby="nav-matthias-skills-tab">
-                  <div class="element-inner">
-                    <dl class="row ">
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Chronomancer.png"><span class="mesmer">Chronomancer</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="30305,10236,30814,10302,29519" data-armory-size="40"></span><br>
-                        <b class="mesmer">Specializations:</b> Illusions, Inspiration & Chronomancer<br>
-                      </dd>
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Druid.png"><span class="ranger">Druid</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="12489,31804,12493,12497,12569" data-armory-size="40"></span><br>  
-                        <span data-armory-embed="skills" data-armory-ids="12489,31804,12495,12498,12569" data-armory-size="40"></span><br>
-                        <b class="ranger">Specializations:</b> Nature Magic, Skirmishing & Druid<br>
-                        <b class="ranger">Pets:</b> Electric Wyvern & Black Moa/Gazelle
-                      </dd>
-                      <dt class="col-sm-3"><img class="icon" src="assets/Icons/Berserker.png"><span class="warrior">Berserker</span></dt>
-                      <dd class="col-sm-9 text-muted">
-                        <span data-armory-embed="skills" data-armory-ids="30189,29941,14407,14405,30343" data-armory-size="40"></span><br>
-                        <b class="warrior">Specializations:</b> Tactics, Arms, Berserker<br>
-                      </dd>
-                    </dl>
-                  </div>
                 </div>
               </div>
             </div>
@@ -779,10 +774,12 @@
                       <dd class="mechanics col-sm-9 text-muted">
                         <b>100%-80%</b><br>
                         <b class="text-effect">Snow Storm</b><br>
-                        Movement speed is reduced and players will receive <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Chilled.png"> Chilled' class="icon" src="assets/Effects/Chilled.png">.<br>
+                        Movement speed is reduced and players will receive 
+                        <a class="tooltip-Chilled"></a>
                         <b class="text-effect">Icy Patches</b><br>
                         Knocks down players standing in it.<br>
-                        Can be removed by applying <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Burning.png"> Burning' class="icon" src="assets/Effects/Burning.png">.<br>
+                        Can be removed by applying 
+                        <a class="tooltip-Burning"></a><br>
                         <b class="text-effect">Oppressive Gaze</b><br>
                         Launches a ball of energy at the fixated player for 50% of their max health.<br>
                         Can hit twice if that player is moving.<br>
@@ -791,7 +788,8 @@
                       <dd class="mechanics col-sm-9 text-muted">
                         <b>80%-60%</b><br>
                         <b class="text-effect">Heat Wave</b><br>
-                        Players standing still for too long will receive <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Burning.png"> Burning' class="icon" src="assets/Effects/Burning.png">.<br>
+                        Players standing still for too long will receive 
+                        <a class="tooltip-Burning"></a><br>
                         <b class="text-effect">Fiery Tornado</b><br>
                         Fire tornadoes roam around the room, pulling-in and damaging any nearby players.<br>
                         <b class="text-effect">Unstable Blood Magic</b><br>
@@ -806,7 +804,8 @@
                         <b class="text-effect">Downpour</b><br>
                         Movement increases stack count. Knocks down at 10 stacks and resets Downpour stacks.<br>
                         <b class="text-effect">Storm Cloud</b><br>
-                        Large moving AoE that deals heavy damage and applies <img data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Effects/Poison.png"> Poison' class="icon" src="assets/Effects/Poison.png">.<br>
+                        Large moving AoE that deals heavy damage and applies 
+                        <a class="tooltip-Poison"></a><br>
                         <b class="text-effect">Zealous Benediction</b><br>
                         Targets multiple players with a timed AoE that will explode and deal heavy damage to other players in range.
                         <br>
@@ -842,6 +841,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script async src="https://unpkg.com/armory-embeds@^0.x.x/armory-embeds.js"></script>
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/tooltips.js"></script>
 
     <script type='text/javascript'>
       var scroll = new SmoothScroll('a[data-scroll]');
