@@ -235,7 +235,7 @@ textarea {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
 }
-img:focus {
+img:focus, td:focus {
   outline: none !important;
 }
 
@@ -5013,6 +5013,7 @@ tbody.collapse.show {
   border: 1px solid rgba(216, 84, 58, 1);
 }
 
+
 .alert-dark hr {
   border-top-color: #b8b8b8;
 }
@@ -5805,7 +5806,7 @@ button.close {
   width: 1rem;
   margin-left: -0.5rem;
   content: "";
-  border-bottom: 1px solid #444;
+  border-bottom: none !important;
 }
 
 .bs-popover-left, .bs-popover-auto[x-placement^="left"] {
