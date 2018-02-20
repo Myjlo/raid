@@ -84,7 +84,7 @@
                 <dt class="col-sm-4">Health</dt>
                 <dd class="col-sm-8">
                   <div class="progress healthbar">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">3/3</div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">???</div>
                   </div>
                 </dd>
                 <dt class="col-sm-4">Timer</dt>
@@ -294,7 +294,7 @@
                       <dt class="mechanics col-sm-3">Masteries</dt>
                       <dd class="mechanics col-sm-9 text-muted">
                         <b>Required:</b> N/A<br>
-                        <b>Recommended:</b> Forsaken Waters Mastery, Ley-Line Gliding Mastery, Bouncing Mushroom Mastery<br>
+                        <b>Recommended:</b> Forsaken Waters Mastery, Ley-Line Gliding Mastery, Bouncing Mushroom Mastery, Forsaken Magic<br>
                       </dd>
                       <dt class="mechanics col-sm-3">Aggro</dt>
                       <dd class="mechanics col-sm-9 text-muted">
@@ -311,20 +311,46 @@
                     <dl class="row ">
                       <dt class="mechanics col-sm-3">Glenna</dt>
                       <dd class="mechanics col-sm-9 text-muted">
+                        Use the Special Action Key to move her around.<br>
+                        Enemies will spawn when Glenna stays out of range for too long.<br>
+                        Keep her safe and healed.<br>
+                        <span class="colored"><span class="oi oi-warning"></span> It is safer to assign 1 player (usually a Druid) to control Glenna.</span><br>
                         <b class="text-effect">Mines</b><br>
-                        <br>
+                        Stand in the White AoE to surface a Mine and kill it.<br>
+                        Instantly kills any player in side the Red AoE.<br>
+                        <span class="colored"><span class="oi oi-warning"></span> Watch out for <a class="tooltip-Knockback"></a> and <a class="tooltip-Fear"></a> while clearing mines.</span><br>
                         <b class="text-effect">Checkpoints</b><br>
-                        <br>
+                        Once reached it unlocks Ley-Line towards the next Tower, so the tower group can progress.<br>
                         <b class="text-effect">Wargs</b><br>
+                        Spawns every time a tower is captured.<br>
+                        One Warg spawns near the start, and one at the end.<br>
+                        Determined to kill Glenna, kill them before they reach her.<br>
+                        Slow with <a class="tooltip-Immobile"></a><a class="tooltip-Crippled"></a><a class="tooltip-Chilled"></a><br>
                       </dd>
                       <dt class="mechanics col-sm-3">Towers</dt>
                       <dd class="mechanics col-sm-9 text-muted">
+                        The group assigned to Towers runs through the Cave.<br>
+                        Alternatively, a Chronomancer runs through solo and uses <a class="tooltip-Portal"></a> and portals players up so the rest can help the other group throughout the encounter.<br>
+                        <b class="text-effect">Cave</b><br>
+                        Throughout the cave you get Toxic Spores, which reduces healing and applies damage.
+                        Walking through Thicket Waters heals and prevents Toxic Spores for a short duration.<br>
                         <b class="text-effect">Capturing</b><br>
-                        <br>
+                        A group of White Mantle spawns on each tower.<br>
+                        You can knock them all out for instant capture or kill everything but one.<br>
+                        <span class="colored"><span class="oi oi-warning"></span> A new group of enemies will spawn if all previous enemies are killed.</span><br>
                         <b class="text-effect">Turret</b><br>
+                        Use the Bloodstone Turret to support your allies below or keep enemies on the tower at bay.
                       </dd>
                       <dt class="mechanics col-sm-3">McLeod the Silent</dt>
                       <dd class="mechanics col-sm-9 text-muted">
+                        McLeod teleports to the player furthest away, stay stacked.<br>
+                        Applies lots of <a class="tooltip-Confusion"></a><br>
+                        <span class="colored"><span class="oi oi-warning"></span> You do not have to control Glenna while McLeod is alive.</span><br>
+                        <b class="text-effect">Split</b><br>
+                        Every <span class="text-timer">25%</span> health.<br>
+                        McLeod splits into 2 clones, attuning players to one of them.<br>
+                        You can only damage the clone you are attuned to.<br>
+                        Once both clones are dead, McLeod returns and spawns a Warg.
                       </dd>
                     </dl>
                   </div>
@@ -347,19 +373,19 @@
               </div>
               <dl class="row">
                 <dt class="col-sm-4">Difficulty</dt>
-                <dd class="col-sm-8">Easy</dd>
+                <dd class="col-sm-8">Medium</dd>
                 <dt class="col-sm-4">Hitbox</dt>
-                <dd class="col-sm-8">60 (Small)</dd>
+                <dd class="col-sm-8">-</dd>
                 <dt class="col-sm-4">Armor</dt>
-                <dd class="col-sm-8">5346</dd>
+                <dd class="col-sm-8">-</dd>
                 <dt class="col-sm-4">Health</dt>
                 <dd class="col-sm-8">
                   <div class="progress healthbar">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">3/3</div>
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">???</div>
                   </div>
                 </dd>
                 <dt class="col-sm-4">Timer</dt>
-                <dd class="col-sm-8">N/A</dd>
+                <dd class="col-sm-8">-</dd>
               </dl>
             </div>
           </div>
@@ -389,14 +415,12 @@
                           <img class="icon" src="assets/Icons/Berserker.png">
                           <img class="icon" src="assets/Icons/Condi.png">
                         </td>
-                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Condi.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
                           <img class="icon" src="assets/Icons/Any.png">
-                          <img class="icon" src="assets/Icons/Condi.png">
                           <img class="icon" src="assets/Icons/Power.png">
                         </td>
-                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Condi.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
                           <img class="icon" src="assets/Icons/Any.png">
-                          <img class="icon" src="assets/Icons/Condi.png">
                           <img class="icon" src="assets/Icons/Power.png">
                         </td>
                       </tr>
@@ -409,19 +433,16 @@
                           <img class="icon" src="assets/Icons/Druid.png">
                           <img class="icon" src="assets/Icons/Healer.png">
                         </td>
-                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Condi.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
                           <img class="icon" src="assets/Icons/Any.png">
-                          <img class="icon" src="assets/Icons/Condi.png">
                           <img class="icon" src="assets/Icons/Power.png">
                         </td>
-                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Condi.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
                           <img class="icon" src="assets/Icons/Any.png">
-                          <img class="icon" src="assets/Icons/Condi.png">
                           <img class="icon" src="assets/Icons/Power.png">
                         </td>
-                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Condi.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
+                        <td data-toggle="tooltip" data-html="true" title='<img class="icon" src="assets/Icons/Any.png"><img class="icon" src="assets/Icons/Power.png"> DPS'>
                           <img class="icon" src="assets/Icons/Any.png">
-                          <img class="icon" src="assets/Icons/Condi.png">
                           <img class="icon" src="assets/Icons/Power.png">
                         </td>
                     </tbody>
@@ -488,8 +509,8 @@
                 <div class="tab-pane fade element-inner" id="nav-Keep_Construct-dps" role="tabpanel" aria-labelledby="nav-Keep_Construct-dps-tab">
                   <div class="element-inner">
                     <p class="text-muted">
-                      Due to <b>Gorseval</b> having a large hitbox, having DPS classes that benefit from that is the most obvious choice.<br>
-                      This has to be balanced out with the amount of Crowd Control.<br>
+                      Due to <b>Keep Construct</b> having a large hitbox, having DPS classes that benefit from that is the most obvious choice.<br>
+                      Short burst phases make Condi less desirable due to its ramp-up time.<br>
                       Weavers are a very solid choice due to the use of "Tempests Defense".
                   </div>
                   <table class="table table-sm">
@@ -580,9 +601,32 @@
                 <div class="element-inner">
                   <div class="element-inner">
                     <dl class="row ">
-                      <dt class="mechanics col-sm-3">Mechanic</dt>
+                      <dt class="mechanics col-sm-3">Statue Projections</dt>
                       <dd class="mechanics col-sm-9 text-muted">
-                        Description
+                        <b class="text-effect">Xera's Embrace</b><br>
+                        <br>
+                        <b class="text-effect">Time Bombs</b><br>
+                        <br>
+                        <b class="text-effect">Phantasms</b><br>
+                        <br>
+                        <b class="text-effect">Insidious Projection</b><br>
+                      </dd>
+                      <dt class="mechanics col-sm-3">Phase: Exposed</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        
+                        <b class="text-effect">Xera's Phantasms</b><br>
+                      </dd>
+                      <dt class="mechanics col-sm-3">Phase: Construct Core</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        
+                      </dd>
+                      <dt class="mechanics col-sm-3">Phase: Compromised</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+
+                      </dd>
+                      <dt class="mechanics col-sm-3">Phase: Magic Blast</dt>
+                      <dd class="mechanics col-sm-9 text-muted">
+                        <b class="text-effect">Colored Orbs</b><br>
                       </dd>
                     </dl>
                   </div>
